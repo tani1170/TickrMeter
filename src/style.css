@@ -2,3 +2,133 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* font family */
+  --font-family-futura: "futura-pt",
+    sans-serif;
+  --font-family-raleway: "Raleway",
+    sans-serif;
+
+  /* font size  */
+  --font-size-xs: 16px;
+  --font-size-sm: 18px;
+  --font-size-md: 25px;
+  --font-size-lg: 39px;
+  --font-size-xl: 48px;
+
+  /* font weight */
+  --font-weight-semibold: 600;
+  --font-weight-medium: 500;
+  --font-weight-light: 300;
+
+  /* ----------------- ALIASSER --------------- */
+
+  /* font family */
+  /* --font-family-heading_nav: var(--font-family-futura);
+--font-family-caption_base: var(--font-family-raleway); */
+
+  /* font size */
+  --font-h1: var(--font-size-xl);
+
+  --font-h2: var(--font-size-lg);
+
+  --font-h3: var(--font-size-md);
+
+  --font-h4: var(--font-size-sm);
+
+  --font-base: var(--font-size-xs);
+  --font-nav: var(--font-size-md);
+
+  --font-link: var(--font-size-sm);
+
+  /* font weight */
+  --font-weight-h1: var(
+    --font-weight-medium
+  );
+  --font-weight-h2: var(
+    --font-weight-medium
+  );
+  --font-weight-h3: var(
+    --font-weight-medium
+  );
+  --font-weight-h4: var(
+    --font-weight-semibold
+  );
+  --font-weight-btn: var(
+    --font-weight-semibold
+  );
+  --font-weight-body: var(
+    --font-weight-light
+  );
+  --font-weight-nav: var(
+    --font-weight-medium
+  );
+
+  --font-weight-link: var(
+    --font-weight-medium
+  );
+}
+
+h1 {
+  font-size: var(--font-h1);
+  font-weight: var(--font-weight-h1);
+  font-family: var(
+    --font-family-futura
+  );
+}
+
+h2 {
+  font-size: var(--font-h2);
+  font-weight: var(--font-weight-h2);
+  font-family: var(
+    --font-family-raleway
+  );
+}
+
+h3 {
+  font-size: var(--font-h3);
+  font-weight: var(--font-weight-h3);
+  font-family: var(
+    --font-family-raleway
+  );
+}
+
+h4 {
+  font-size: var(--font-h4);
+  font-weight: var(--font-weight-h4);
+  font-family: var(
+    --font-family-raleway
+  );
+}
+
+p {
+  font-size: var(--font-base);
+  font-weight: var(--font-weight-body);
+  font-family: var(
+    --font-family-raleway
+  );
+}
+
+.nav {
+  font-size: var(--font-nav);
+  font-weight: var(--font-weight-nav);
+  font-family: var(
+    --font-family-futura
+  );
+}
+
+.nav:hover {
+  opacity: 80%;
+}
+.link {
+  font-size: var(--font-size-link);
+  font-weight: var(--font-weight-body);
+  font-family: var(
+    --font-family-raleway
+  );
+  text-decoration: underline;
+}
+
+.link:hover {
+  font-weight: var(--font-weight-link);
+}

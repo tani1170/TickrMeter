@@ -12,22 +12,11 @@ module.exports = {
       bluedark: "#414559",
     },
 
-    fontFamily: {
-      heading: [
-        "futura-pt, sans-serif",
-      ],
-      body: ["Raleway", "sans-serif"],
-    },
-    // "Font Family": {
-    //   $type: "fontFamily",
-    //   heading: {
-    //     $value:
-    //       "font-family: futura-pt, sans-serif",
-    //   },
-    //   body: {
-    //     $value:
-    //       "font-family: 'Raleway', sans-serif",
-    //   },
+    // fontFamily: {
+    //   heading: [
+    //     "futura-pt, sans-serif",
+    //   ],
+    //   body: ["Raleway", "sans-serif"],
     // },
 
     screens: {
@@ -38,13 +27,6 @@ module.exports = {
       // => @media (min-width: 1024px) { ... }
 
       desktop: "1440px",
-    },
-
-    fontSize: {
-      base: "1rem",
-      md: "1.5rem",
-      lg: "1.9rem",
-      xl: "2.4rem",
     },
 
     extend: {},
