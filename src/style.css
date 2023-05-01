@@ -23,10 +23,6 @@
 
   /* ----------------- ALIASSER --------------- */
 
-  /* font family */
-  /* --font-family-heading_nav: var(--font-family-futura);
---font-family-caption_base: var(--font-family-raleway); */
-
   /* font size */
   --font-h1: var(--font-size-xl);
 
@@ -60,6 +56,10 @@
   --font-weight-body: var(
     --font-weight-light
   );
+
+  --font-weight-bodybold: var(
+    --font-weight-semibold
+  );
   --font-weight-nav: var(
     --font-weight-medium
   );
@@ -68,6 +68,8 @@
     --font-weight-medium
   );
 }
+
+/* ------------------- STYLES ----------------- */
 
 h1 {
   font-size: var(--font-h1);
@@ -104,6 +106,14 @@ h4 {
 p {
   font-size: var(--font-base);
   font-weight: var(--font-weight-body);
+  font-family: var(
+    --font-family-raleway
+  );
+}
+
+.pbold {
+  font-size: var(--font-base);
+  font-weight: var(--font-weight-bold);
   font-family: var(
     --font-family-raleway
   );
