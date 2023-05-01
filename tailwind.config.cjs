@@ -30,6 +30,16 @@ module.exports = {
     //   },
     // },
 
+    screens: {
+      mobile: "390px",
+      // => @media (min-width: 640px) { ... }
+
+      laptop: "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      desktop: "1440px",
+    },
+
     fontSize: {
       base: "1rem",
       md: "1.5rem",
