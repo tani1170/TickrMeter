@@ -32,47 +32,502 @@
 
     <title>TickrMeter</title>
   </head>
-  <body class="bg-graydark">
-    <div
+  <body
+    class="bg-beige dark:bg-graydark"
+  >
+    <!---------------------- LANDINGPAGE ------------------------>
+    <section
+      class="grid h-[40rem] grid-cols-8 grid-rows-6 hmd:h-[45rem] hmd:grid-cols-9 md:grid-cols-9 md:grid-rows-4 lg:grid-rows-5"
+    >
+      <header class="w-screen sm:h-56">
+        <div
+          class="mx-auto flex items-center justify-between py-4"
+        >
+          <div class="ml-5 md:ml-10">
+            <div
+              class="img-toggle h-16 w-28"
+            ></div>
+          </div>
+
+          <!-- burger svg -->
+          <button
+            id="toggle"
+            class="mr-5 md:hidden"
+          >
+            <svg
+              class="burgersvg h-7 w-7"
+              aria-hidden="true"
+              viewBox="0 0 100 80"
+              width="40"
+              height="40"
+            >
+              <rect
+                width="90"
+                height="18"
+              ></rect>
+              <rect
+                y="30"
+                x="40"
+                width="70"
+                height="18"
+              ></rect>
+              <rect
+                y="60"
+                x="10"
+                width="80"
+                height="18"
+              ></rect>
+            </svg>
+          </button>
+
+          <!-- NAVIGATIONS -->
+          <nav
+            id="nav"
+            class="fixed top-20 bottom-0 -right-full flex w-screen flex-col transition-all md:static md:w-auto md:flex-row md:pr-12 lg:self-center"
+          >
+            <div
+              class="flex flex-col gap-4 md:grid md:grid-cols-7 md:items-center lg:grid lg:grid-cols-9 lg:flex-row"
+            >
+              <ul
+                class="ml-9 md:col-span-5 md:col-start-1 md:flex md:gap-10 lg:col-start-2"
+              >
+                <li>
+                  <a
+                    class="navfont"
+                    href="bestil.html"
+                    >Bestil</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="navfont"
+                    href="support.html"
+                    >Support</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="navfont"
+                    href="guide.html"
+                    >Guide</a
+                  >
+                </li>
+                <div class="dropdown">
+                  <button
+                    class="navfont flex items-center"
+                    href="omos.html"
+                  >
+                    Om Os
+
+                    <svg
+                      class="ml-1 h-5 w-5"
+                      aria-hidden="true"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+
+                  <!-- DROPDOWN MENU -->
+                  <div
+                    class="dropdown-content"
+                  >
+                    <a
+                      class="navfont"
+                      href="#"
+                      >Hvem er vi?</a
+                    >
+
+                    <a
+                      class="navfont"
+                      href="#"
+                      >Nyheder</a
+                    >
+
+                    <a
+                      class="navfont"
+                      href="#"
+                      >Til
+                      virksomheder</a
+                    >
+                  </div>
+                </div>
+              </ul>
+              <!-- NAVIGATIONS ICONS -->
+              <ul
+                class="ml-3 flex place-content-end gap-5 md:col-start-7 lg:col-start-9"
+              >
+                <li
+                  class="iconsetting h-6 w-6"
+                ></li>
+                <li
+                  class="iconuser h-6 w-6"
+                ></li>
+                <li
+                  class="iconbasket h-6 w-6"
+                ></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div
+        class="col-start-1 col-end-9 row-span-3 row-start-3 ml-5 hmd:col-span-5 hmd:col-start-2 hmd:row-span-4 hmd:row-start-3 md:col-start-2 md:row-span-2 md:row-start-3 md:place-content-center lg:col-span-3 lg:col-start-2 lg:row-start-3"
+      >
+        <h1 class="dark:text-graylight">
+          Få mere tid til det vigtige
+          med TickrMeter
+        </h1>
+        <button
+          class="btn mt-6 border-4 border-graydark py-3 px-10 dark:border-graylight dark:text-graylight"
+        >
+          Få din her
+        </button>
+      </div>
+
+      <div
+        class="col-span-9 col-start-2 row-start-5 mt-10 hmd:col-start-5 hmd:row-start-4 hmd:mt-0 md:col-span-4 md:col-start-5 md:row-span-3 md:row-start-3 lg:col-span-5 lg:col-start-5 lg:ml-20"
+      >
+        <img
+          class="h-auto w-5/6"
+          src="/img/tickrmeter front.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="over -z-10 col-span-4 col-start-7 row-start-1 h-[40rem] bg-green hmd:h-[45rem]"
+      ></div>
+    </section>
+
+    <!---------------------- BANNER SPONSER ------------------------>
+    <section
+      class="banner place-item-center grid h-24 hmd:h-32"
+    >
+      <div
+        class="mx-16 flex items-center justify-between"
+      >
+        <div
+          class="bannerlogo1 h-32 w-52"
+        ></div>
+
+        <div
+          class="bannerlogo2 h-16 w-44"
+        ></div>
+
+        <div
+          class="bannerlogo3 h-16 w-28"
+        ></div>
+
+        <div
+          class="bannerlogo4 h-8 w-52"
+        ></div>
+
+        <img
+          class="bannerlogo5 h-8 w-auto"
+          src="/img/indiegogo-logo.webp"
+          alt=""
+        />
+        <img
+          class="bannerlogo6 h-24 w-auto"
+          src="/img/LogoHODLers.webp"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <!---------------------- FUNCTIONS ------------------------>
+
+    <section
+      class="grid-rows-7 grid max-h-screen grid-cols-6 hmd:grid-cols-8 hmd:grid-rows-5 lg:h-screen lg:grid-cols-4"
+    >
+      <!-- Trejde elementer -->
+      <div
+        class="grid-col-4 grid-row-4 col-span-full col-start-5 row-span-2 row-start-1 grid h-44 hmd:col-span-full hmd:col-start-1 hmd:row-span-full hmd:row-start-1 hmd:hidden hmd:h-auto hmd:grid-rows-6"
+      >
+        <div
+          class="col-span-12 col-start-4 row-span-2 row-start-1 border-l-4 border-b-4 border-green hmd:col-start-5 hmd:row-span-1"
+        ></div>
+        <div
+          class="col-span-5 col-start-11 row-span-3 row-start-2 border-l-4 border-b-4 border-t-4 border-green hmd:hidden"
+        ></div>
+      </div>
+
+      <div
+        class="grid-col-4 grid-row-4 hmd:row- col-span-full col-start-1 row-span-2 row-start-4 grid h-44 hmd:col-span-full hmd:col-start-1 hmd:row-span-full hmd:row-start-1 hmd:h-auto hmd:grid-cols-8 hmd:grid-rows-6 lg:grid-cols-12"
+      >
+        <div
+          class="col-span-4 col-start-1 row-span-5 row-start-3 border-r-4 border-t-4 border-b-4 border-green hmd:col-span-2 hmd:col-start-1 hmd:row-start-4 hmd:border-b-0 lg:col-end-6 lg:row-start-4 lg:border-b-0"
+        ></div>
+        <div
+          class="col-span-5 col-start-4 row-span-3 row-start-6 border-t-4 border-l-4 border-r-4 border-green hmd:col-span-2 hmd:col-start-2 hmd:row-span-full hmd:row-start-2 lg:col-span-full lg:col-start-5 lg:row-span-4 lg:row-start-2 lg:border-r-0"
+        ></div>
+      </div>
+
+      <!-- PRODUKT OG FUNKTIONER -->
+      <div
+        class="col-span-full col-start-1 row-span-5 row-start-1 grid grid-cols-8 grid-rows-4 pt-20 lg:row-span-full lg:grid-cols-10 lg:pt-0"
+      >
+        <div
+          class="col-span-8 col-start-1 row-span-5 row-start-1 mx-5 flex flex-col gap-5 hmd:grid hmd:grid-cols-5 lg:col-span-full lg:row-span-full lg:grid-cols-9 lg:grid-rows-6"
+        >
+          <!-- PRODUKT -->
+          <div
+            class="grid grid-cols-4 grid-rows-4 hmd:col-span-3 hmd:col-start-1 hmd:row-span-4 hmd:row-start-1 hmd:h-96 hmd:w-80 lg:col-span-full lg:col-start-1 lg:row-span-full lg:h-full lg:w-2/4 lg:grid-cols-8 lg:grid-rows-6"
+          >
+            <img
+              class="col-span-3 col-start-1 row-span-2 row-start-1 h-40 hmd:row-start-2 hmd:h-32 lg:col-span-full lg:row-span-3 lg:row-start-2 lg:h-auto"
+              src="img/produkt1.png"
+              alt="TickrMeter produkt med grønt lys"
+            />
+            <img
+              class="col-span-3 col-start-2 row-span-2 row-start-3 h-40 hmd:row-start-4 hmd:h-32 lg:col-span-full lg:col-start-3 lg:row-span-2 lg:row-start-4 lg:h-auto"
+              src="img/produkt2.png"
+              alt="TickrMeter produkt med rødt lys"
+            />
+          </div>
+          <!-- FUNKTIONER -->
+          <div
+            class="order-first hmd:order-last hmd:col-span-full hmd:col-start-3 hmd:row-start-1 lg:col-start-5 lg:row-span-full lg:row-start-2 lg:pt-10"
+          >
+            <h2>
+              Nogle af funktionerne
+            </h2>
+            <div
+              class="grid gap-1.5 hmd:flex hmd:flex-wrap"
+            >
+              <!-- Første fordel  -->
+              <div
+                class="hmd:w-56 lg:w-80"
+              >
+                <div
+                  class="flex place-items-start gap-2"
+                >
+                  <h3>01</h3>
+                  <div class="pt-2">
+                    <h4>
+                      Forbind via WiFi
+                    </h4>
+                    <p>
+                      TickrMeter skal
+                      kun sættes op én
+                      gang. Derfra vil
+                      TickrMeter altid
+                      opdatere
+                      automatisk direkte
+                      fra dit WiFi.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Anden fordel  -->
+              <div
+                class="hmd:w-56 lg:w-80"
+              >
+                <div
+                  class="flex place-items-start gap-2"
+                >
+                  <h3>02</h3>
+                  <div class="pt-2">
+                    <h4>
+                      Statuslys der kan
+                      tilpasses
+                    </h4>
+                    <p>
+                      Indstil
+                      statusdisplayet
+                      til at vise candle
+                      stick farve, RSI
+                      eller som en
+                      advarsel. Flere
+                      funktioner er på
+                      vej!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Trejde fordel  -->
+              <div
+                class="hmd:w-56 lg:w-80"
+              >
+                <div
+                  class="flex place-items-start gap-2"
+                >
+                  <h3>03</h3>
+                  <div class="pt-2">
+                    <h4>
+                      Højteknologisk
+                      E-Ink skærm
+                    </h4>
+                    <p>
+                      TickrMeter bruger
+                      en E-Ink skærm,
+                      som ikke udsender
+                      lys og ikke
+                      forstyrrer dig.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fjerde fordel  -->
+              <div
+                class="hmd:w-56 lg:w-80"
+              >
+                <div
+                  class="flex place-items-start gap-2"
+                >
+                  <h3>04</h3>
+                  <div class="pt-2">
+                    <h4>
+                      Minimalistisk og
+                      elegant
+                    </h4>
+                    <p>
+                      TickrMeter har et
+                      elegant og
+                      minimalistisk
+                      design, så den let
+                      kan indgå i som en
+                      del af din
+                      indretning
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------- VIDEO ------------------------>
+
+    <section class="mt-16 hmd:mt-0">
+      <div
+        class="grid grid-cols-2 grid-rows-5 lg:h-screen lg:grid-cols-9 lg:grid-rows-6"
+      >
+        <div
+          class="themebg col-span-full col-start-1 row-span-4 row-start-1 h-96 lg:col-end-7 lg:row-span-4 lg:row-start-1 lg:h-auto"
+        ></div>
+        <div
+          class="col-span-full col-start-1 row-span-4 row-start-1 mt-10 px-5 lg:col-start-2 lg:col-end-5 lg:row-span-3 lg:row-start-2"
+        >
+          <h2 class="themefont">
+            Bring dine inversteringer
+            til live
+          </h2>
+          <p class="themefont">
+            TickrMeter er designet til
+            at være den essentielle
+            gadget for hobbyinvestorer,
+            professionelle investorer og
+            alt derimellem. Vi lykkes
+          </p>
+        </div>
+
+        <div
+          class="col-span-full col-start-1 row-span-4 row-start-3 flex place-content-center px-5 pt-20 hmd:mt-0 lg:col-span-full lg:col-start-5 lg:row-span-3 lg:row-start-1 lg:mx-20"
+        >
+          <iframe
+            class="h-56 w-80 hmd:h-auto hmd:w-full lg:h-full"
+            src="https://www.youtube.com/embed/RlNv1kYmQas"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------- TESTIMONIALS ------------------------>
+
+    <section></section>
+
+    <!---------------------- HUB ------------------------>
+
+    <section>
+      <div
+        class="grid grid-cols-2 grid-rows-5 lg:h-screen lg:grid-cols-9 lg:grid-rows-6"
+      >
+        <div
+          class="themebg col-span-full col-start-1 row-span-4 row-start-1 h-96 lg:col-end-7 lg:row-span-4 lg:row-start-1 lg:h-auto"
+        ></div>
+        <div
+          class="col-span-full col-start-1 row-span-4 row-start-1 mt-10 px-5 lg:col-start-2 lg:col-end-5 lg:row-span-3 lg:row-start-2"
+        >
+          <div>
+            <h2 class="themefont">
+              Besøg TickrMeter HUB
+            </h2>
+            <p class="themefont">
+              Del
+              TickrMeter-brugstilfælde
+              eller giv feedback i
+              TickrMeter-fællesskabet
+            </p>
+          </div>
+          <button
+            class="btn themebtn mt-6 border-4 px-10"
+          >
+            Få din her
+          </button>
+        </div>
+
+        <div
+          class="col-span-full col-start-1 row-span-4 row-start-3 flex place-content-center border-l-4 border-t-4 border-b-4 border-green px-5 pt-20 hmd:mt-0 lg:col-span-full lg:col-start-5 lg:row-span-3 lg:row-start-1 lg:mx-20"
+        ></div>
+      </div>
+    </section>
+
+    <!-- TEXT TESTER -->
+
+    <!-- <div
       class="grid grid-cols-5 grid-rows-5"
     >
       <div
         class="border-3 col-span-2 col-start-2 row-span-3 row-start-2 space-y-3 mobile:col-span-4 mobile:col-start-1"
       >
-        <h1 class="text-beige">
+        <h1 class="dark:text-graylight">
           Heading 1, Futura medium, 48px
         </h1>
-        <h2 class="text-beige">
+        <h2 class="dark:text-graylight">
           Heading 2, Futura medium, 39px
         </h2>
-        <h3 class="text-beige">
+        <h3 class="dark:text-graylight">
           heading 3, Raleway medium,
           25px
         </h3>
-        <h4 class="text-beige">
+        <h4 class="dark:text-graylight">
           heading 4, raleway semibold
           18px
         </h4>
-        <p class="text-beige">
+        <p class="dark:text-graylight">
           Body, Raleway light, 16px
         </p>
-        <p class="pbold text-beige">
+        <p
+          class="pbold dark:text-graylight"
+        >
           Body, Raleway semibold, 16px
         </p>
 
         <div
           class="flex flex-col space-y-4"
         >
-          <a
-            href="nav"
-            class="nav text-beige"
+          <a href="nav" class="nav"
             >nav, Futura medium, 25px,
             hover med opacity 80%</a
           >
 
-          <a
-            href="link"
-            class="link text-beige"
+          <a href="link" class="link"
             >link, Raleway light, 18px,
             hover raleway medium</a
           >
@@ -84,72 +539,7 @@
       <div
         class="col-span-2 col-start-5 row-span-4 row-start-3 border-l-4 border-t-4 border-green"
       ></div>
-    </div>
-
-    <div
-      class="grid grid-cols-5 grid-rows-5 bg-beige"
-    >
-      <div
-        class="col-span-2 col-start-4 row-span-3 row-start-2 space-y-3 p-3"
-      >
-        <h1 class="text-graydark">
-          Heading 1, Futura regular,
-          39px/2.4rem
-        </h1>
-        <h2 class="text-graydark">
-          Heading 2, Futura regular,
-          31px/1.9rem
-        </h2>
-        <h3 class="text-graydark">
-          heading 3, Futura regular,
-          25px/1.5rem
-        </h3>
-
-        <p class="text-graydark">
-          Body, Raleway Regular,
-          16px/1rem
-        </p>
-      </div>
-      <div
-        class="col-start-1 col-end-4 row-span-2 row-start-2 border-y-4 border-r-4 border-green"
-      ></div>
-      <div
-        class="col-span-1 col-start-2 row-span-4 row-start-3 border-x-4 border-t-4 border-green"
-      ></div>
-    </div>
-
-    <div
-      class="grid grid-cols-5 grid-rows-5 bg-bluedark"
-    >
-      <div
-        class="col-span-2 col-start-2 row-span-3 row-start-2 space-y-4 p-4"
-      >
-        <h1 class="text-graylight">
-          Heading 1, Futura regular,
-          39px/2.4rem
-        </h1>
-        <h2 class="text-graylight">
-          Heading 2, Futura regular,
-          31px/1.9rem
-        </h2>
-        <h3 class="text-graylight">
-          heading 3, Futura regular,
-          25px/1.5rem
-        </h3>
-        <p
-          class="font-body text-base text-graylight"
-        >
-          Body, Raleway Regular,
-          16px/1rem
-        </p>
-      </div>
-      <div
-        class="col-start-4 col-end-6 row-span-2 row-start-2 border-y-4 border-l-4 border-green"
-      ></div>
-      <div
-        class="col-span-2 col-start-5 row-span-4 row-start-3 border-l-4 border-t-4 border-green"
-      ></div>
-    </div>
+    </div> -->
 
     <script
       type="module"

@@ -13,6 +13,7 @@
   --font-size-xs: 16px;
   --font-size-sm: 18px;
   --font-size-md: 25px;
+  --font-size-xmd: 31px;
   --font-size-lg: 39px;
   --font-size-xl: 48px;
 
@@ -31,11 +32,16 @@
   --font-h3: var(--font-size-md);
 
   --font-h4: var(--font-size-sm);
-
+  --font-btn: var(--font-size-sm);
   --font-base: var(--font-size-xs);
   --font-nav: var(--font-size-md);
 
   --font-link: var(--font-size-sm);
+
+  --font-mobile-h1: var(--font-size-lg);
+  --font-mobile-h2: var(
+    --font-size-xmd
+  );
 
   /* font weight */
   --font-weight-h1: var(
@@ -69,14 +75,18 @@
   );
 }
 
-/* ------------------- STYLES ----------------- */
+/* --------------------------------------------- STYLES ------------------------------------------------- */
 
+/* ----------------------------------------------- TYPOGRAFI ----------------------------------- */
 h1 {
   font-size: var(--font-h1);
   font-weight: var(--font-weight-h1);
   font-family: var(
     --font-family-futura
   );
+  color: #2b2e27;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 h2 {
@@ -85,6 +95,13 @@ h2 {
   font-family: var(
     --font-family-raleway
   );
+  color: #2b2e27;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.themefont {
+  color: #ece8e4;
 }
 
 h3 {
@@ -93,6 +110,7 @@ h3 {
   font-family: var(
     --font-family-raleway
   );
+  color: #2b2e27;
 }
 
 h4 {
@@ -101,14 +119,24 @@ h4 {
   font-family: var(
     --font-family-raleway
   );
+  color: #2b2e27;
 }
 
+.btn {
+  font-size: var(--font-btn);
+  font-weight: var(--font-weight-btn);
+  font-family: var(
+    --font-family-raleway
+  );
+  color: #2b2e27;
+}
 p {
   font-size: var(--font-base);
   font-weight: var(--font-weight-body);
   font-family: var(
     --font-family-raleway
   );
+  color: #2b2e27;
 }
 
 .pbold {
@@ -117,17 +145,19 @@ p {
   font-family: var(
     --font-family-raleway
   );
+  color: #2b2e27;
 }
 
-.nav {
+.navfont {
   font-size: var(--font-nav);
   font-weight: var(--font-weight-nav);
   font-family: var(
     --font-family-futura
   );
+  color: #2b2e27;
 }
 
-.nav:hover {
+.navfont:hover {
   opacity: 80%;
 }
 .link {
@@ -137,8 +167,247 @@ p {
     --font-family-raleway
   );
   text-decoration: underline;
+  color: #2b2e27;
 }
 
 .link:hover {
   font-weight: var(--font-weight-link);
+}
+
+/* --------------------------------------------- IMG/ICONS -------------------------------------- */
+
+.img-toggle {
+  background: url(img/logo_light_pri.svg)
+    center / cover;
+}
+
+.iconsetting {
+  background: url(img/setting_light.svg)
+    center / cover;
+}
+.iconuser {
+  background: url(img/user_light.svg)
+    center / cover;
+}
+.iconbasket {
+  background: url(img/basket_light.svg)
+    center / cover;
+}
+
+.burgersvg {
+  fill: #2b2e27;
+}
+
+.navdrop {
+  fill: #2b2e27;
+}
+/* ---------------------------------------------- NAVGITAION SKIFT VED SCROLL --------------------------------- */
+
+/* ---------------------------------------------- DROP DOWN --------------------------------- */
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #2b2e27;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ece8e4;
+  border-color: #2b2e27;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px
+    rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* --------------------------------------------------- OTHER STYLES -------------------- */
+.banner {
+  background-color: #2b2e27;
+}
+
+.bannerlogo1 {
+  background: url(img/manofmany_light.svg)
+    center / contain;
+  background-repeat: no-repeat;
+}
+.bannerlogo2 {
+  background: url(img/yankodesign_light.svg)
+    center / cover;
+}
+.bannerlogo3 {
+  background: url(img/techtimes_light.svg)
+    center / cover;
+}
+
+.bannerlogo4 {
+  background: url(img/blessthisstuff_light.svg)
+    center / cover;
+}
+
+/* ------------------------------------------------BACKGROUND -------------------- */
+
+.themebg {
+  background-color: #2b2e27;
+}
+
+.themebtn {
+  border-color: #ece8e4;
+  color: #ece8e4;
+}
+
+/* --------------------------------------------------- MOBILE MEDIA RULES -------------------- */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: var(--font-mobile-h1);
+  }
+
+  h2 {
+    font-size: var(--font-mobile-h2);
+  }
+
+  ul {
+    text-align: end;
+    padding-right: 2rem;
+  }
+
+  .dropdown-content {
+    right: 10px;
+  }
+
+  .dropdown-content a {
+    text-align: right;
+  }
+}
+
+/* -------------------------------------------------- PREFERS DARK THEME ------------------------ */
+@media (prefers-color-scheme: dark) {
+  /* --------------- NAVIGATION---------------  */
+  .img-toggle {
+    background: url(img/logo_dark_pri.svg)
+      center / cover;
+  }
+
+  .iconsetting {
+    background: url(img/setting_dark.svg)
+      center / cover;
+  }
+  .iconuser {
+    background: url(img/user_dark.svg)
+      center / cover;
+  }
+  .iconbasket {
+    background: url(img/basket_dark.svg)
+      center / cover;
+  }
+
+  .burgersvg {
+    fill: #dce2e4;
+  }
+
+  .navdrop {
+    fill: #dce2e4;
+  }
+  .dropdown-content {
+    background-color: #2b2e27;
+    border-color: #dce2e4;
+  }
+
+  .dropdown .dropbtn {
+    color: #dce2e4;
+  }
+
+  /* --------------- TYPOGAFI---------------  */
+
+  h1 {
+    color: #dce2e4;
+  }
+
+  h2 {
+    color: #dce2e4;
+  }
+
+  .themefont {
+    color: #dce2e4;
+  }
+
+  h3 {
+    color: #dce2e4;
+  }
+
+  h4 {
+    color: #dce2e4;
+  }
+
+  p {
+    color: #dce2e4;
+  }
+
+  .pbold {
+    color: #dce2e4;
+  }
+
+  .navfont {
+    color: #dce2e4;
+  }
+
+  .link {
+    color: #dce2e4;
+  }
+
+  /* --------------- BANNER---------------  */
+
+  .banner {
+    background-color: #414559;
+  }
+
+  .bannerlogo1 {
+    background: url(img/manofmany_dark.svg)
+      center / contain;
+    background-repeat: no-repeat;
+  }
+  .bannerlogo2 {
+    background: url(img/yankodesign_dark.svg)
+      center / cover;
+  }
+  .bannerlogo3 {
+    background: url(img/techtimes_dark.svg)
+      center / cover;
+  }
+
+  .bannerlogo4 {
+    background: url(img/blessthisstuff_dark.svg)
+      center / cover;
+  }
+
+  /* --------------- BACKGROUND---------------  */
+  .themebg {
+    background-color: #414559;
+  }
+
+  .themebtn {
+    border-color: #dce2e4;
+  }
 }
