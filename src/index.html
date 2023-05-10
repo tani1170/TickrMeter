@@ -207,44 +207,83 @@
 
     <!---------------------- BANNER SPONSER ------------------------>
     <section
-      class="banner place-item-center grid h-24 hmd:h-32"
+      class="banner grid h-24 overflow-hidden lg:h-32"
     >
-      <div
-        class="mx-16 flex items-center justify-between"
-      >
+      <div class="hidden lg:block">
         <div
-          class="bannerlogo1 h-32 w-52"
-        ></div>
+          class="flex place-items-center content-center justify-center space-x-10"
+        >
+          <div
+            class="bannerlogo1 h-32 w-52"
+          ></div>
 
+          <div
+            class="bannerlogo2 h-16 w-44"
+          ></div>
+
+          <div
+            class="bannerlogo3 h-16 w-28"
+          ></div>
+
+          <div
+            class="bannerlogo4 h-8 w-52"
+          ></div>
+
+          <img
+            class="bannerlogo5 h-8 w-auto"
+            src="/img/indiegogo-logo.webp"
+            alt=""
+          />
+          <img
+            class="bannerlogo6 h-24 w-auto"
+            src="/img/LogoHODLers.webp"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="lg:hidden">
         <div
-          class="bannerlogo2 h-16 w-44"
-        ></div>
+          class="flex place-items-center content-center overflow-x-auto"
+        >
+          <div
+            class="animate-marquee flex place-items-center justify-items-center space-x-10"
+          >
+            <div
+              class="bannerlogo1 w-96"
+            ></div>
 
-        <div
-          class="bannerlogo3 h-16 w-28"
-        ></div>
+            <div
+              class="bannerlogo2 object- h-20 w-72"
+            ></div>
 
-        <div
-          class="bannerlogo4 h-8 w-52"
-        ></div>
+            <div
+              class="bannerlogo3 h-20 w-48"
+            ></div>
 
-        <img
-          class="bannerlogo5 h-8 w-auto"
-          src="/img/indiegogo-logo.webp"
-          alt=""
-        />
-        <img
-          class="bannerlogo6 h-24 w-auto"
-          src="/img/LogoHODLers.webp"
-          alt=""
-        />
+            <div
+              class="bannerlogo4 h-10 w-96"
+            ></div>
+
+            <img
+              class="bannerlogo5 h-8 w-auto"
+              src="/img/indiegogo-logo.webp"
+              alt=""
+            />
+            <img
+              class="bannerlogo6 h-24 w-auto"
+              src="/img/LogoHODLers.webp"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
     </section>
 
     <!---------------------- FUNCTIONS ------------------------>
 
     <section
-      class="grid-rows-7 grid max-h-screen grid-cols-6 hmd:grid-cols-8 hmd:grid-rows-5 lg:h-screen lg:grid-cols-4"
+      class="grid-rows-7 grid max-h-screen grid-cols-6 hmd:grid-cols-8 hmd:grid-rows-5 lg:max-h-[82rem] lg:grid-cols-4"
     >
       <!-- Trejde elementer -->
       <div
@@ -265,28 +304,28 @@
           class="col-span-4 col-start-1 row-span-5 row-start-3 border-r-4 border-t-4 border-b-4 border-green hmd:col-span-2 hmd:col-start-1 hmd:row-start-4 hmd:border-b-0 lg:col-end-6 lg:row-start-4 lg:border-b-0"
         ></div>
         <div
-          class="col-span-5 col-start-4 row-span-3 row-start-6 border-t-4 border-l-4 border-r-4 border-green hmd:col-span-2 hmd:col-start-2 hmd:row-span-full hmd:row-start-2 lg:col-span-full lg:col-start-5 lg:row-span-4 lg:row-start-2 lg:border-r-0"
+          class="col-span-5 col-start-4 row-span-3 row-start-6 border-t-4 border-l-4 border-r-4 border-green hmd:col-span-2 hmd:col-start-2 hmd:row-span-full hmd:row-start-2 lg:col-span-full lg:col-start-5 lg:row-span-full lg:row-start-2 lg:border-r-0"
         ></div>
       </div>
 
       <!-- PRODUKT OG FUNKTIONER -->
       <div
-        class="col-span-full col-start-1 row-span-5 row-start-1 grid grid-cols-8 grid-rows-4 pt-20 lg:row-span-full lg:grid-cols-10 lg:pt-0"
+        class="col-span-full col-start-1 row-span-5 row-start-1 grid grid-cols-8 grid-rows-4 pt-20 lg:row-span-full lg:grid-cols-5 lg:pt-0"
       >
         <div
           class="col-span-8 col-start-1 row-span-5 row-start-1 mx-5 flex flex-col gap-5 hmd:grid hmd:grid-cols-5 lg:col-span-full lg:row-span-full lg:grid-cols-9 lg:grid-rows-6"
         >
           <!-- PRODUKT -->
           <div
-            class="grid grid-cols-4 grid-rows-4 hmd:col-span-3 hmd:col-start-1 hmd:row-span-4 hmd:row-start-1 hmd:h-96 hmd:w-80 lg:col-span-full lg:col-start-1 lg:row-span-full lg:h-full lg:w-2/4 lg:grid-cols-8 lg:grid-rows-6"
+            class="grid grid-cols-4 grid-rows-4 hmd:col-span-3 hmd:col-start-1 hmd:row-span-4 hmd:row-start-1 hmd:h-96 hmd:w-fit lg:col-span-full lg:col-start-1 lg:row-span-full lg:h-full lg:w-2/4 lg:grid-cols-8 lg:grid-rows-6"
           >
             <img
-              class="col-span-3 col-start-1 row-span-2 row-start-1 h-40 hmd:row-start-2 hmd:h-32 lg:col-span-full lg:row-span-3 lg:row-start-2 lg:h-auto"
+              class="col-span-3 col-start-1 row-span-2 row-start-1 h-40 hmd:row-start-2 hmd:w-full lg:col-span-full lg:row-span-3 lg:row-start-2 lg:h-auto"
               src="img/produkt1.png"
               alt="TickrMeter produkt med grønt lys"
             />
             <img
-              class="col-span-3 col-start-2 row-span-2 row-start-3 h-40 hmd:row-start-4 hmd:h-32 lg:col-span-full lg:col-start-3 lg:row-span-2 lg:row-start-4 lg:h-auto"
+              class="col-span-3 col-start-2 row-span-2 row-start-3 h-40 hmd:row-start-4 hmd:w-full lg:col-span-full lg:col-start-3 lg:row-span-2 lg:row-start-4 lg:h-auto"
               src="img/produkt2.png"
               alt="TickrMeter produkt med rødt lys"
             />
@@ -410,15 +449,17 @@
 
     <!---------------------- VIDEO ------------------------>
 
-    <section class="mt-16 hmd:mt-0">
+    <section
+      class="mt-16 hmd:mt-0 hmd:pb-10"
+    >
       <div
-        class="grid grid-cols-2 grid-rows-5 lg:h-screen lg:grid-cols-9 lg:grid-rows-6"
+        class="grid grid-cols-2 grid-rows-5 lg:grid-cols-9 lg:grid-rows-5"
       >
         <div
-          class="themebg col-span-full col-start-1 row-span-4 row-start-1 h-96 lg:col-end-7 lg:row-span-4 lg:row-start-1 lg:h-auto"
+          class="themebg col-span-full col-start-1 row-span-4 row-start-1 h-96 lg:col-end-7 lg:row-span-5 lg:row-start-1"
         ></div>
         <div
-          class="col-span-full col-start-1 row-span-4 row-start-1 mt-10 px-5 lg:col-start-2 lg:col-end-5 lg:row-span-3 lg:row-start-2"
+          class="col-span-full col-start-1 row-span-4 row-start-1 px-5 lg:col-start-2 lg:col-end-5 lg:row-span-3 lg:row-start-2"
         >
           <h2 class="themefont">
             Bring dine inversteringer
@@ -434,10 +475,10 @@
         </div>
 
         <div
-          class="col-span-full col-start-1 row-span-4 row-start-3 flex place-content-center px-5 pt-20 hmd:mt-0 lg:col-span-full lg:col-start-5 lg:row-span-3 lg:row-start-1 lg:mx-20"
+          class="col-span-full col-start-1 row-span-4 row-start-3 flex place-content-center px-5 pt-20 hmd:col-span-3 hmd:col-start-1 hmd:row-span-full hmd:row-start-2 hmd:mt-0 lg:col-span-full lg:col-start-5 lg:row-span-4 lg:row-start-1 lg:mx-20"
         >
           <iframe
-            class="h-56 w-80 hmd:h-auto hmd:w-full lg:h-full"
+            class="hmd:w-9/12"
             src="https://www.youtube.com/embed/RlNv1kYmQas"
             title="YouTube video player"
             frameborder="0"
@@ -452,9 +493,11 @@
 
     <section></section>
 
+    <!---------------------- TEST ------------------------>
+
     <!---------------------- HUB ------------------------>
 
-    <section>
+    <!-- <section>
       <div
         class="grid grid-cols-2 grid-rows-5 lg:h-screen lg:grid-cols-9 lg:grid-rows-6"
       >
@@ -486,7 +529,7 @@
           class="col-span-full col-start-1 row-span-4 row-start-3 flex place-content-center border-l-4 border-t-4 border-b-4 border-green px-5 pt-20 hmd:mt-0 lg:col-span-full lg:col-start-5 lg:row-span-3 lg:row-start-1 lg:mx-20"
         ></div>
       </div>
-    </section>
+    </section> -->
 
     <!-- TEXT TESTER -->
 
