@@ -77,6 +77,10 @@
 
 /* --------------------------------------------- STYLES ------------------------------------------------- */
 
+body {
+  background-color: #ece8e4;
+}
+
 /* ----------------------------------------------- TYPOGRAFI ----------------------------------- */
 h1 {
   font-size: var(--font-h1);
@@ -301,6 +305,21 @@ a {
   color: #2b2e27;
 }
 
+.packbtn {
+  border-color: #2b2e27;
+  height: 3rem;
+  color: #2b2e27;
+  border-width: 2px;
+  height: 3rem;
+}
+
+.packbtn:focus {
+  background-color: #2b2e27;
+  color: #ece8e4;
+  border-width: 2px;
+  height: 3rem;
+}
+
 @keyframes marquee {
   0% {
     transform: translateX(0);
@@ -461,5 +480,23 @@ a {
     background-color: #414559;
     border-color: #dce2e4;
     color: #dce2e4;
+  }
+
+  body {
+    background-color: #2b2e27;
+  }
+
+  .packbtn {
+    border-color: #dce2e4;
+    color: #dce2e4;
+    border-width: 2px;
+    height: 3rem;
+  }
+
+  .packbtn:focus {
+    background-color: #dce2e4;
+    color: #2b2e27;
+    border-width: 2px;
+    height: 3rem;
   }
 }
