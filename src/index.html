@@ -490,92 +490,158 @@
 
     <!---------------------- HUB ------------------------>
 
-    <!-- <section>
-      <div
-        class="grid grid-cols-2 grid-rows-5 lg:h-screen lg:grid-cols-9 lg:grid-rows-6"
-      >
+    <section class="">
+      <div class="relative">
         <div
-          class="themebg col-span-full col-start-1 row-span-4 row-start-1 h-96 lg:col-end-7 lg:row-span-4 lg:row-start-1 lg:h-auto"
+          class="absolute -bottom-10 -z-10 h-72 w-3/5 border-r-4 border-b-4 border-t-4 border-green hmd:top-24"
         ></div>
-        <div
-          class="col-span-full col-start-1 row-span-4 row-start-1 mt-10 px-5 lg:col-start-2 lg:col-end-5 lg:row-span-3 lg:row-start-2"
-        >
-          <div>
-            <h2 class="themefont">
-              Besøg TickrMeter HUB
-            </h2>
-            <p class="themefont">
-              Del
-              TickrMeter-brugstilfælde
-              eller giv feedback i
-              TickrMeter-fællesskabet
-            </p>
-          </div>
-          <button
-            class="btn themebtn mt-6 border-4 px-10"
+        <div class="px-5">
+          <div
+            class="themebg mx-5 grid place-items-center justify-around justify-items-center gap-5 p-5 pb-10 hmd:gap-3 hmd:py-10 md:mx-56 md:flex md:h-72"
           >
-            Få din her
-          </button>
+            <div
+              class="md:flex md:self-start"
+            >
+              <img
+                class="h-12"
+                src="/img/Users Group Rounded.svg"
+                alt=""
+              />
+            </div>
+
+            <div class="pb-5">
+              <h2 class="themefont">
+                Besøg TickrMeter Hub
+              </h2>
+              <p
+                class="themefont md:w-72"
+              >
+                Del
+                TickrMeter-brugstilfælde
+                eller giv feedback i
+                TickrMeter-fællesskabet
+              </p>
+            </div>
+
+            <a
+              href="https://www.facebook.com/groups/tickrmeter"
+              class="btn themebtn max-w-fit whitespace-nowrap border-4 px-14 py-4"
+            >
+              Gå til Hub</a
+            >
+          </div>
         </div>
-
-        <div
-          class="col-span-full col-start-1 row-span-4 row-start-3 flex place-content-center border-l-4 border-t-4 border-b-4 border-green px-5 pt-20 hmd:mt-0 lg:col-span-full lg:col-start-5 lg:row-span-3 lg:row-start-1 lg:mx-20"
-        ></div>
       </div>
-    </section> -->
+    </section>
 
-    <!-- TEXT TESTER -->
-
-    <!-- <div
-      class="grid grid-cols-5 grid-rows-5"
+    <!---------------------- FOOTER ------------------------>
+    <footer
+      class="mx-14 mt-20 mb-10 grid gap-10 hmd:mt-52"
     >
       <div
-        class="border-3 col-span-2 col-start-2 row-span-3 row-start-2 space-y-3 mobile:col-span-4 mobile:col-start-1"
+        class="grid gap-8 hmd:flex hmd:justify-around lg:mx-20"
       >
-        <h1 class="dark:text-graylight">
-          Heading 1, Futura medium, 48px
-        </h1>
-        <h2 class="dark:text-graylight">
-          Heading 2, Futura medium, 39px
-        </h2>
-        <h3 class="dark:text-graylight">
-          heading 3, Raleway medium,
-          25px
-        </h3>
-        <h4 class="dark:text-graylight">
-          heading 4, raleway semibold
-          18px
-        </h4>
-        <p class="dark:text-graylight">
-          Body, Raleway light, 16px
-        </p>
-        <p
-          class="pbold dark:text-graylight"
-        >
-          Body, Raleway semibold, 16px
-        </p>
-
+        <!-- Input -->
         <div
-          class="flex flex-col space-y-4"
+          class="grid gap-2 hmd:gap-1"
         >
-          <a href="nav" class="nav"
-            >nav, Futura medium, 25px,
-            hover med opacity 80%</a
-          >
+          <div>
+            <h3>Tilmeld nyhedsbrev</h3>
+            <p class="hmd:w-72">
+              Gå ikke glip af kampagner,
+              nyheder eller opdateringer
+              om nye funktioner!
+            </p>
+          </div>
 
-          <a href="link" class="link"
-            >link, Raleway light, 18px,
-            hover raleway medium</a
+          <div>
+            <form action="submit">
+              <label for="email"
+                >Email:</label
+              >
+              <div
+                class="inputfooter flex w-fit content-center border-2"
+              >
+                <input
+                  type="email"
+                  placeholder="min@email.com"
+                  id="email"
+                  class="inputfooter border-none"
+                />
+                <div
+                  class="newslettercheck mr-2 flex h-auto w-10"
+                ></div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Kontakt -->
+        <div
+          class="grid gap-2 hmd:flex hmd:flex-col hmd:gap-1"
+        >
+          <h4>Kontakt os!</h4>
+
+          <a
+            href="mailto:hello@tickrmeter.com"
+            >hello@tickrmeter.com</a
           >
+          <p>
+            TickrMeter ApS CVR
+            DK43371584
+          </p>
+          <p>
+            Weidekampsgade 3, 2 tv,
+            DK2300 København
+          </p>
+        </div>
+
+        <!-- links -->
+        <div class="grid gap-2">
+          <h4>Hurtig Menu</h4>
+          <div
+            class="grid gap-1 hmd:gap-2"
+          >
+            <a
+              href="Nyheder"
+              class="link"
+              >Nyheder</a
+            >
+            <a
+              href="Nyheder"
+              class="link"
+              >Setup Guide</a
+            >
+            <a
+              href="Nyheder"
+              class="link"
+              >Suport</a
+            >
+            <a
+              href="Nyheder"
+              class="link"
+              >Om os</a
+            >
+            <a
+              href="Nyheder"
+              class="link"
+              >Til virksomheder</a
+            >
+            <a
+              href="Nyheder"
+              class="link"
+              >Servicevilkår</a
+            >
+          </div>
         </div>
       </div>
-      <div
-        class="col-start-4 col-end-6 row-span-2 row-start-2 border-y-4 border-l-4 border-green"
-      ></div>
-      <div
-        class="col-span-2 col-start-5 row-span-4 row-start-3 border-l-4 border-t-4 border-green"
-      ></div>
-    </div> -->
+
+      <div class="flex justify-center">
+        <div
+          class="img-toggle h-16 w-28 hmd:h-24 hmd:w-44"
+        ></div>
+      </div>
+    </footer>
 
     <script
       type="module"
