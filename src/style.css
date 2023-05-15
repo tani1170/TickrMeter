@@ -332,6 +332,44 @@ a {
 .animate-marquee {
   animation: marquee 10s linear infinite;
 }
+
+/* FAQ PRODUKTINFORMATION */
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.faq-arrow {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  display: none;
+  margin-top: 5px;
+}
+
+.faq-answer.show {
+  display: block;
+}
+
+.faq-answer.show .faq-arrow {
+  transform: rotate(-135deg);
+}
+.faq-separator {
+  border-bottom: 2px solid;
+  border-color: #0eb663;
+  padding-top: 10px;
+}
 /* --------------------------------------------------- MOBILE MEDIA RULES -------------------- */
 @media (max-width: 1024px) {
   h1 {
