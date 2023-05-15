@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/vite.svg"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.typekit.net/qqu5yej.css"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>TickrMeter</title>
+  </head>
+  <body>
+    <!---------------------- HEADER ------------------------>
+
+    <header class="w-screen">
+      <div
+        class="mx-auto flex items-center justify-between py-4"
+      >
+        <div class="ml-5 md:ml-10">
+          <a href="/index.html">
+            <div
+              class="img-toggle h-16 w-28"
+            ></div
+          ></a>
+        </div>
+
+        <!-- burger svg -->
+        <button
+          id="toggle"
+          class="mr-5 md:hidden"
+        >
+          <svg
+            class="burgersvg h-7 w-7"
+            aria-hidden="true"
+            viewBox="0 0 100 80"
+            width="40"
+            height="40"
+          >
+            <rect
+              width="90"
+              height="18"
+            ></rect>
+            <rect
+              y="30"
+              x="40"
+              width="70"
+              height="18"
+            ></rect>
+            <rect
+              y="60"
+              x="10"
+              width="80"
+              height="18"
+            ></rect>
+          </svg>
+        </button>
+
+        <!-- NAVIGATIONS -->
+        <nav
+          id="nav"
+          class="fixed top-20 bottom-0 -right-full flex w-screen flex-col transition-all md:static md:w-auto md:flex-row md:pr-12 lg:self-center"
+        >
+          <div
+            class="flex flex-col gap-4 md:grid md:grid-cols-7 md:items-center lg:grid lg:grid-cols-9 lg:flex-row"
+          >
+            <ul
+              class="ml-9 md:col-span-5 md:col-start-1 md:flex md:gap-10 lg:col-start-2"
+            >
+              <li>
+                <a
+                  class="navfont"
+                  href="/bestil.html"
+                  >Bestil</a
+                >
+              </li>
+              <li>
+                <a
+                  class="navfont"
+                  href="/support.html"
+                  >Support</a
+                >
+              </li>
+              <li>
+                <a
+                  class="navfont"
+                  href="/guide.html"
+                  >Guide</a
+                >
+              </li>
+              <div class="dropdown">
+                <button
+                  class="navfont flex items-center"
+                  href="/omos.html"
+                >
+                  Om Os
+
+                  <svg
+                    class="ml-1 h-5 w-5"
+                    aria-hidden="true"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+
+                <!-- DROPDOWN MENU -->
+                <div
+                  class="dropdown-content"
+                >
+                  <a
+                    class="navfont"
+                    href="/omos.html"
+                    >Hvem er vi?</a
+                  >
+
+                  <a
+                    class="navfont"
+                    href="#"
+                    >Nyheder</a
+                  >
+
+                  <a
+                    class="navfont"
+                    href="#"
+                    >Til virksomheder</a
+                  >
+                </div>
+              </div>
+            </ul>
+            <!-- NAVIGATIONS ICONS -->
+            <ul
+              class="ml-3 flex place-content-end gap-5 md:col-start-7 lg:col-start-9"
+            >
+              <li
+                class="iconsetting h-6 w-6"
+              ></li>
+              <li
+                class="iconuser h-6 w-6"
+              ></li>
+              <li
+                class="iconbasket h-6 w-6"
+              ></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!---------------------- LANDING PAGE OM OS ------------------------>
+    <section class="mb-10 mt-5">
+      <div
+        class="grid md:grid-cols-5 md:gap-10"
+      >
+        <div
+          class="md:col-start-1 md:col-end-4"
+        >
+          <img
+            src="/img/placeholder3.jpg"
+            alt="Billede"
+          />
+        </div>
+        <div
+          class="px-5 md:col-span-full md:col-start-4 md:mr-20 md:grid md:self-center lg:mr-40"
+        >
+          <h2>Forstil dig dette</h2>
+          <div class="grid gap-2">
+            <p>
+              Det er januar 2021, det er
+              koldt og mørkt udenfor, du
+              arbejder stadig hjemmefra,
+              og din portefølje flyver,
+              fordi du har købt dippen.
+            </p>
+            <p>
+              Du synes selv at tjekke
+              din portefølje lidt for
+              ofte til at se tallene
+              stige, hvilket distraherer
+              dig fra de faktiske
+              vigtige ting, du skal
+              gøre.
+            </p>
+            <p class="pbold">
+              Det gav mig ideen til
+              TickrMeter.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------- INFORMATIONS SEKTIONS ------------------------>
+    <section
+      class="mx-5 grid grid-rows-3 hmd:grid-rows-2 md:grid-cols-5 lg:mx-20 lg:my-20"
+    >
+      <div
+        class="themebg col-start-1 row-span-2 row-start-1 px-5 pb-28 hmd:mb-56 hmd:pb-0 md:col-start-1 md:col-end-5 md:row-span-full md:mb-0 md:flex md:flex-col md:place-content-center md:pl-20 md:pr-56 lg:pr-80 lg:pl-32"
+      >
+        <h2 class="themefont">
+          Designet til investorer, af
+          investorer
+        </h2>
+        <p class="themefont">
+          TickrMeter er designet til at
+          være den essentielle gadget
+          for hobbyinvestorer,
+          professionelle investorer og
+          alt derimellem.
+        </p>
+      </div>
+
+      <div
+        class="col-start-1 row-span-full row-start-2 mt-10 px-5 hmd:row-start-1 hmd:mt-40 md:col-span-full md:col-start-4 md:row-span-full md:mb-10 md:mt-10 md:self-center"
+      >
+        <img
+          class="h-full w-full object-contain"
+          src="/img/placeholder4.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <!---------------------- KONTAKT INPUTSEKTION  ------------------------>
+    <section class="px-5 pb-20">
+      <div>
+        <h2>
+          Har du spørgsmål eller
+          feedback?
+        </h2>
+
+        <p>
+          Du er altid velkommen til at
+          udfylde formularen eller ringe
+          til op på
+          <a
+            class="pbold"
+            href="tel:+45 12 34 56 78"
+            >+45 12 34 56 78</a
+          >
+        </p>
+      </div>
+
+      <form
+        action="mailto:modtager@example.com"
+        method="post"
+        enctype="text/plain"
+        class="themebg py-5 px-5"
+      >
+        <h3 class="themefont pb-5">
+          Kom i kontakt med os
+        </h3>
+        <div class="mb-4">
+          <label
+            for="name"
+            class="themefont"
+            >Navn:</label
+          >
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="John Johnsen"
+            class="w-full px-4 py-2"
+          />
+        </div>
+        <div class="mb-4">
+          <label
+            for="subject"
+            class="themefont block"
+            >Emne:</label
+          >
+          <input
+            type="text"
+            id="subject"
+            placeholder="Teknisk problem"
+            name="subject"
+            class="w-full px-4 py-2"
+          />
+        </div>
+        <div class="mb-4">
+          <label
+            for="email"
+            class="themefont block"
+            >E-mail:</label
+          >
+          <input
+            type="email"
+            id="email"
+            placeholder="min@email.dk"
+            name="email"
+            class="w-full px-4 py-2"
+          />
+        </div>
+
+        <div class="mb-4">
+          <label
+            for="message"
+            class="themefont block"
+            >Besked:</label
+          >
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Min besked til TickrMeter"
+            rows="5"
+            class="w-full px-4 py-2"
+          ></textarea>
+        </div>
+        <button type="submit" class="">
+          Send
+        </button>
+      </form>
+    </section>
+
+    <!---------------------- BANNER SPONSER ------------------------>
+    <section
+      class="banner grid h-24 overflow-hidden lg:h-32"
+    >
+      <div class="hidden lg:block">
+        <div
+          class="flex place-items-center content-center justify-center space-x-10"
+        >
+          <div
+            class="bannerlogo1 h-32 w-52"
+          ></div>
+
+          <div
+            class="bannerlogo2 h-16 w-44"
+          ></div>
+
+          <div
+            class="bannerlogo3 h-16 w-28"
+          ></div>
+
+          <div
+            class="bannerlogo4 h-8 w-52"
+          ></div>
+
+          <img
+            class="bannerlogo5 h-8 w-auto"
+            src="/img/indiegogo-logo.webp"
+            alt=""
+          />
+          <img
+            class="bannerlogo6 h-24 w-auto"
+            src="/img/LogoHODLers.webp"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="lg:hidden">
+        <div
+          class="flex place-items-center content-center overflow-x-auto"
+        >
+          <div
+            class="animate-marquee flex place-items-center justify-items-center space-x-10"
+          >
+            <div
+              class="bannerlogo1 w-96"
+            ></div>
+
+            <div
+              class="bannerlogo2 object- h-20 w-72"
+            ></div>
+
+            <div
+              class="bannerlogo3 h-20 w-48"
+            ></div>
+
+            <div
+              class="bannerlogo4 h-10 w-96"
+            ></div>
+
+            <img
+              class="bannerlogo5 h-8 w-auto"
+              src="/img/indiegogo-logo.webp"
+              alt=""
+            />
+            <img
+              class="bannerlogo6 h-24 w-auto"
+              src="/img/LogoHODLers.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------- HUB ------------------------>
+
+    <section class="mt-10 md:mt-20">
+      <div class="relative">
+        <div
+          class="absolute -bottom-10 -z-10 h-72 w-3/5 border-r-4 border-b-4 border-t-4 border-green hmd:top-24"
+        ></div>
+        <div class="px-5">
+          <div
+            class="themebg mx-5 grid place-items-center justify-around justify-items-center gap-5 p-5 pb-10 hmd:gap-3 hmd:py-10 md:mx-56 md:flex md:h-72"
+          >
+            <div
+              class="md:flex md:self-start"
+            >
+              <img
+                class="h-12"
+                src="/img/Users Group Rounded.svg"
+                alt=""
+              />
+            </div>
+
+            <div class="pb-5">
+              <h2 class="themefont">
+                Besøg TickrMeter Hub
+              </h2>
+              <p
+                class="themefont md:w-72"
+              >
+                Del
+                TickrMeter-brugstilfælde
+                eller giv feedback i
+                TickrMeter-fællesskabet
+              </p>
+            </div>
+
+            <a
+              href="https://www.facebook.com/groups/tickrmeter"
+              class="btn themebtn max-w-fit whitespace-nowrap border-4 px-14 py-4"
+            >
+              Gå til Hub</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------- FOOTER ------------------------>
+    <footer
+      class="mx-14 mt-20 mb-10 grid gap-10 hmd:mt-52"
+    >
+      <div
+        class="grid gap-8 hmd:flex hmd:justify-around lg:mx-20"
+      >
+        <!-- Input -->
+        <div
+          class="grid gap-2 hmd:gap-1"
+        >
+          <div>
+            <h3>Tilmeld nyhedsbrev</h3>
+            <p class="hmd:w-72">
+              Gå ikke glip af kampagner,
+              nyheder eller opdateringer
+              om nye funktioner!
+            </p>
+          </div>
+
+          <div>
+            <form action="submit">
+              <label for="email"
+                >Email:</label
+              >
+              <div
+                class="inputfooter flex w-fit content-center border-2"
+              >
+                <input
+                  type="email"
+                  placeholder="min@email.com"
+                  id="email"
+                  class="inputfooter border-none"
+                />
+                <div
+                  class="newslettercheck mr-2 flex h-auto w-10"
+                ></div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Kontakt -->
+        <div
+          class="grid gap-2 hmd:flex hmd:flex-col hmd:gap-1"
+        >
+          <h4>Kontakt os!</h4>
+
+          <a
+            href="mailto:hello@tickrmeter.com"
+            >hello@tickrmeter.com</a
+          >
+          <p>
+            TickrMeter ApS CVR
+            DK43371584
+          </p>
+          <p>
+            Weidekampsgade 3, 2 tv,
+            DK2300 København
+          </p>
+        </div>
+
+        <!-- links -->
+        <div class="grid gap-2">
+          <h4>Hurtig Menu</h4>
+          <div
+            class="grid gap-1 hmd:gap-2"
+          >
+            <a
+              href="Nyheder"
+              class="link"
+              >Nyheder</a
+            >
+            <a
+              href="Nyheder"
+              class="link"
+              >Setup Guide</a
+            >
+            <a
+              href="Nyheder"
+              class="link"
+              >Suport</a
+            >
+            <a
+              href="Nyheder"
+              class="link"
+              >Om os</a
+            >
+            <a
+              href="Nyheder"
+              class="link"
+              >Til virksomheder</a
+            >
+            <a
+              href="Nyheder"
+              class="link"
+              >Servicevilkår</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center">
+        <div
+          class="img-toggle h-16 w-28 hmd:h-24 hmd:w-44"
+        ></div>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="./main.js"
+    ></script>
+  </body>
+</html>
