@@ -292,4 +292,4 @@ document.addEventListener(
   }
 );
 
-// login slider
+//

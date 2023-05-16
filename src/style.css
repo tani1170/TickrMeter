@@ -305,6 +305,11 @@ a {
   color: #2b2e27;
 }
 
+.logininput {
+  background-color: #ece8e4;
+  color: #2b2e27;
+}
+
 .packbtn {
   border-color: #2b2e27;
   height: 3rem;
@@ -374,6 +379,13 @@ a {
 .separator {
   border-bottom: 2px solid;
   border-color: #ece8e4;
+}
+
+/* ------------- ADGANGSKODE KRAV */
+.password-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }
 
 /* --------------------------------------------------- MOBILE MEDIA RULES -------------------- */
@@ -524,6 +536,11 @@ a {
     background-color: #414559;
     border-color: #dce2e4;
     color: #dce2e4;
+  }
+
+  .logininput {
+    background-color: #dce2e4;
+    color: #2b2e27;
   }
 
   body {
