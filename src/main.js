@@ -291,3 +291,5 @@ document.addEventListener(
     });
   }
 );
+
+// login slider

@@ -370,6 +370,12 @@ a {
   border-color: #0eb663;
   padding-top: 10px;
 }
+
+.separator {
+  border-bottom: 2px solid;
+  border-color: #ece8e4;
+}
+
 /* --------------------------------------------------- MOBILE MEDIA RULES -------------------- */
 @media (max-width: 1024px) {
   h1 {
@@ -536,5 +542,10 @@ a {
     color: #2b2e27;
     border-width: 2px;
     height: 3rem;
+  }
+
+  .separator {
+    border-bottom: 2px solid;
+    border-color: #dce2e4;
   }
 }
