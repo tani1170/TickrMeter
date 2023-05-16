@@ -35,7 +35,7 @@
   <body>
     <!---------------------- HEADER ------------------------>
 
-    <header class="w-screen">
+    <header class="">
       <div
         class="mx-auto flex items-center justify-between py-4"
       >
@@ -220,7 +220,7 @@
 
     <!---------------------- INFORMATIONS SEKTIONS ------------------------>
     <section
-      class="mx-5 grid grid-rows-3 hmd:grid-rows-2 md:grid-cols-5 lg:mx-20 lg:my-20"
+      class="relative mx-5 grid grid-rows-3 hmd:grid-rows-2 md:grid-cols-5 lg:mx-20 lg:my-20"
     >
       <div
         class="themebg col-start-1 row-span-2 row-start-1 px-5 pb-28 hmd:mb-56 hmd:pb-0 md:col-start-1 md:col-end-5 md:row-span-full md:mb-0 md:flex md:flex-col md:place-content-center md:pl-20 md:pr-56 lg:pr-80 lg:pl-32"
@@ -247,11 +247,18 @@
           alt=""
         />
       </div>
+      <!-- <div
+        class="absolute left-72 bottom-6 -z-10 flex h-44 w-24 self-end border-l-4 border-b-4 border-t-4 border-green hmd:-right-96 hmd:-bottom-10 hmd:w-96"
+      ></div> -->
     </section>
 
     <!---------------------- KONTAKT INPUTSEKTION  ------------------------>
-    <section class="px-5 pb-20">
-      <div>
+    <section
+      class="relative grid gap-16 px-5 pb-20 hmd:mt-20 md:grid-cols-2 md:px-0"
+    >
+      <div
+        class="relative md:col-start-1 md:col-end-2 md:flex md:w-96 md:flex-col md:justify-self-center lg:mx-20 lg:justify-self-start"
+      >
         <h2>
           Har du spørgsmål eller
           feedback?
@@ -268,77 +275,103 @@
           >
         </p>
       </div>
+      <div
+        class="absolute -bottom-10 -z-10 col-span-2 col-start-1 h-3/5 w-2/5 border-t-4 border-r-4 border-green sm:hidden hmd:hidden md:block"
+      ></div>
 
-      <form
-        action="mailto:modtager@example.com"
-        method="post"
-        enctype="text/plain"
-        class="themebg py-5 px-5"
+      <div
+        class="absolute -top-10 -z-10 col-span-2 col-start-2 h-3/5 w-full border-t-4 border-l-4 border-b-4 border-green sm:hidden hmd:hidden md:block"
+      ></div>
+      <div
+        class="md:ml-10 lg:col-start-2 lg:ml-0 lg:flex lg:justify-center"
       >
-        <h3 class="themefont pb-5">
-          Kom i kontakt med os
-        </h3>
-        <div class="mb-4">
-          <label
-            for="name"
-            class="themefont"
-            >Navn:</label
-          >
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="John Johnsen"
-            class="w-full px-4 py-2"
-          />
-        </div>
-        <div class="mb-4">
-          <label
-            for="subject"
-            class="themefont block"
-            >Emne:</label
-          >
-          <input
-            type="text"
-            id="subject"
-            placeholder="Teknisk problem"
-            name="subject"
-            class="w-full px-4 py-2"
-          />
-        </div>
-        <div class="mb-4">
-          <label
-            for="email"
-            class="themefont block"
-            >E-mail:</label
-          >
-          <input
-            type="email"
-            id="email"
-            placeholder="min@email.dk"
-            name="email"
-            class="w-full px-4 py-2"
-          />
-        </div>
+        <form
+          action="mailto:modtager@example.com"
+          method="post"
+          enctype="text/plain"
+          class="themebg relative py-5 px-5 md:w-10/12 md:py-10 md:px-10 lg:w-8/12"
+        >
+          <h3 class="themefont pb-5">
+            Kom i kontakt med os
+          </h3>
 
-        <div class="mb-4">
-          <label
-            for="message"
-            class="themefont block"
-            >Besked:</label
+          <!-- Trejdeelement -->
+          <div
+            class="absolute top-96 -left-28 -z-10 h-80 w-56 border-r-4 border-t-4 border-green md:hidden"
+          ></div>
+
+          <div
+            class="absolute -right-5 -top-12 -z-10 h-96 w-64 border-l-4 border-b-4 border-t-4 border-green hmd:-right-3 hmd:w-96 md:hidden lg:hidden"
+          ></div>
+
+          <div class="mb-4">
+            <label
+              for="name"
+              class="themefont"
+              >Navn:</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="John Johnsen"
+              class="w-full px-4 py-2"
+            />
+          </div>
+
+          <div class="mb-4">
+            <label
+              for="subject"
+              class="themefont block"
+              >Emne:</label
+            >
+            <input
+              type="text"
+              id="subject"
+              placeholder="Teknisk problem"
+              name="subject"
+              class="w-full px-4 py-2"
+            />
+          </div>
+
+          <div class="mb-4">
+            <label
+              for="email"
+              class="themefont block"
+              >E-mail:</label
+            >
+            <input
+              type="email"
+              id="email"
+              placeholder="min@email.dk"
+              name="email"
+              class="w-full px-4 py-2"
+            />
+          </div>
+
+          <div class="mb-4">
+            <label
+              for="message"
+              class="themefont block"
+              >Din besked:</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Bliv ved med det gode arbejde!"
+              rows="5"
+              class="w-full px-4 py-2"
+            ></textarea>
+          </div>
+
+          <a
+            href="https://www.facebook.com/groups/tickrmeter"
+            class="btn themebtn flex w-full justify-center whitespace-nowrap border-4 py-3"
           >
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Min besked til TickrMeter"
-            rows="5"
-            class="w-full px-4 py-2"
-          ></textarea>
-        </div>
-        <button type="submit" class="">
-          Send
-        </button>
-      </form>
+            Send din besked
+          </a>
+        </form>
+      </div>
     </section>
 
     <!---------------------- BANNER SPONSER ------------------------>
