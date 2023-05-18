@@ -198,71 +198,115 @@
             Lorem ipsum dolor sit amet,
             consectetur adipiscing elit.
           </p>
-
-          <form class="mt-5">
-            <div class="mb-6">
+          <form class="mt-5 grid gap-5">
+            <div class="">
+              <label
+                for="name"
+                class="themefont"
+              >
+                <p class="themefont">
+                  Navn:
+                </p>
+              </label>
+              <input
+                type="name"
+                id="name"
+                name="name"
+                required
+                class="logininput w-full px-3 py-2"
+              />
+            </div>
+            <div class="">
               <label
                 for="email"
                 class="themefont"
-                ><p class="themefont">
-                  Email:
-                </p></label
               >
+                <p class="themefont">
+                  Email:
+                </p>
+              </label>
               <input
                 type="email"
                 id="email"
                 name="email"
                 required
-                class="logininput mt-2 w-full px-3 py-2"
+                class="logininput w-full px-3 py-2"
               />
             </div>
-            <div class="mb-6">
+            <div class="">
               <label
                 for="password"
                 class="themefont"
-                ><p class="themefont">
+              >
+                <p class="themefont">
                   Adgangskode:
                 </p>
               </label>
-              <div class="mt-2 flex">
+              <div
+                class="logininput flex"
+              >
                 <input
                   type="password"
                   id="password"
                   name="password"
                   minlength="8"
                   required
-                  class="logininput w-full border-0 px-3 py-2 pr-10"
+                  class="logininput w-full border-0"
                 />
                 <button
                   type="button"
                   onclick="togglePasswordVisibility()"
-                  class="logininput flex items-center whitespace-nowrap border-0 pr-2"
+                  class="logininput flex items-center whitespace-nowrap border-0"
                 >
-                  <p class="">
+                  <p class="px-2">
                     Vis kode
                   </p>
                 </button>
                 <span
-                  class="password-indicator"
-                  :class="{'bg-red-500': !isPasswordValid(password), 'bg-green': isPasswordValid(password)}"
+                  class="password-indicator mr-2 flex self-center border-0"
+                ></span>
+              </div>
+            </div>
+            <div class="">
+              <label
+                for="confirm-password"
+                class="themefont"
+              >
+                <p class="themefont">
+                  Gentag adgangskode:
+                </p>
+              </label>
+              <div
+                class="logininput flex"
+              >
+                <input
+                  type="password"
+                  id="confirm-password"
+                  name="confirm-password"
+                  minlength="8"
+                  required
+                  class="logininput w-full border-0"
+                />
+                <span
+                  class="password-indicator mr-2 flex self-center border-0"
                 ></span>
               </div>
             </div>
 
             <div
-              class="mb-6 flex items-center"
+              class="flex items-center"
             >
               <input
                 type="checkbox"
                 id="remember"
                 name="remember"
-                class="custom-checkbox-input checkmark mr-2"
+                class="checkmark mr-2"
               />
-              <label for="remember"
-                ><p class="themefont">
+              <label for="remember">
+                <p class="themefont">
                   Husk mig
-                </p></label
-              >
+                </p>
+              </label>
             </div>
 
             <button
@@ -298,7 +342,7 @@
         <!---------------------- BAGGRUNDSELEMENT ------------------------>
 
         <div
-          class="hidden self-center md:col-span-4 md:col-start-1 md:row-start-1 md:block"
+          class="-z-10 hidden self-center md:col-span-4 md:col-start-1 md:row-start-1 md:block"
         >
           <div
             class="grid-row-3 lg: grid grid-cols-2 gap-10 lg:gap-2"
@@ -329,7 +373,6 @@
       type="module"
       src="./main.js"
     ></script>
-
     <script>
       function togglePasswordVisibility() {
         var passwordInput =
@@ -373,8 +416,59 @@
         return regex.test(password);
       }
 
-      //   HUSK MIG FUNKTION
+      // Opdaterer password-indikatoren ved indtastning
+      var passwordInput =
+        document.getElementById(
+          "password"
+        );
+      var confirmPasswordInput =
+        document.getElementById(
+          "confirm-password"
+        );
+      var passwordIndicator =
+        document.querySelector(
+          ".password-indicator"
+        );
+      var confirmPasswordIndicator =
+        document.querySelectorAll(
+          ".password-indicator"
+        )[1];
 
+      passwordInput.addEventListener(
+        "input",
+        function () {
+          passwordIndicator.classList.toggle(
+            "bg-red",
+            !isPasswordValid(
+              passwordInput.value
+            )
+          );
+          passwordIndicator.classList.toggle(
+            "bg-green",
+            isPasswordValid(
+              passwordInput.value
+            )
+          );
+        }
+      );
+
+      confirmPasswordInput.addEventListener(
+        "input",
+        function () {
+          confirmPasswordIndicator.classList.toggle(
+            "bg-red",
+            passwordInput.value !==
+              confirmPasswordInput.value
+          );
+          confirmPasswordIndicator.classList.toggle(
+            "bg-green",
+            passwordInput.value ===
+              confirmPasswordInput.value
+          );
+        }
+      );
+
+      // HUSK MIG FUNKTION
       const checkbox =
         document.getElementById(
           "remember"
@@ -383,21 +477,6 @@
         document.querySelector(
           ".checkmark"
         );
-
-      checkbox.addEventListener(
-        "change",
-        function () {
-          if (checkbox.checked) {
-            checkmark.classList.add(
-              "bg-green"
-            );
-          } else {
-            checkmark.classList.remove(
-              "bg-green"
-            );
-          }
-        }
-      );
     </script>
   </body>
 </html>

@@ -10,6 +10,7 @@ module.exports = {
       graylight: "#DCE2E4",
       graydark: "#2B2E27",
       bluedark: "#414559",
+      red: "#D84E4E",
     },
 
     // fontFamily: {

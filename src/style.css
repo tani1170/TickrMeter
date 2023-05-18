@@ -325,6 +325,7 @@ a {
   height: 3rem;
 }
 
+/* BANNER FUNKTION */
 @keyframes marquee {
   0% {
     transform: translateX(0);
@@ -388,6 +389,26 @@ a {
   border-radius: 50%;
 }
 
+.checkmark:checked {
+  background-color: #0eb663;
+}
+/* --------------------------------------------------- IPAD TIL DESKTOP MEDIA RULES -------------------- */
+
+@media (min-width: 1024px) {
+  /* lOGIN SLIDE FUNKTION */
+  @keyframes slide {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .animate-slide {
+    animation: slide 0.5s linear;
+  }
+}
 /* --------------------------------------------------- MOBILE MEDIA RULES -------------------- */
 @media (max-width: 1024px) {
   h1 {
