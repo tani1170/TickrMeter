@@ -1,28 +1,5 @@
 import "./style.css";
-/* Import af Motion One bibliotek */
-import {
-  animate,
-  inView,
-  scroll,
-} from "motion";
 
-scroll(
-  animate(".progress-bar", {
-    scaleX: [0, 1],
-  })
-);
-
-inView(
-  ".functions",
-
-  () => {
-    animate(
-      ".functions",
-      { x: [-2000, 0] },
-      { duration: 1 }
-    );
-  }
-);
 // STYRER DARK MODE -----------------
 // On page load or when changing themes, best to add inline in `head` to avoid FOUC
 if (

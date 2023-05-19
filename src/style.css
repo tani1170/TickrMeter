@@ -98,6 +98,12 @@
     color: #dce2e4;
   }
 
+  @media (max-width: 1024px) {
+    .navbg {
+      background-color: #2b2e27;
+    }
+  }
+
   /* --------------- BANNER---------------  */
 
   .banner {
@@ -301,7 +307,11 @@
   .dropdown .dropbtn {
     color: #ece8e4;
   }
-
+  @media (max-width: 1024px) {
+    .navbg {
+      background-color: #ece8e4;
+    }
+  }
   /* --------------- STEPGUIDE---------------  */
 
   .step1 {
@@ -1096,6 +1106,10 @@ a {
 
   .dropdown-content a {
     text-align: right;
+  }
+
+  .navbgtheme {
+    background-color: #2b2e27;
   }
 }
 

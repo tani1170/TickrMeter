@@ -52,7 +52,7 @@
           <!-- burger svg -->
           <button
             id="togglenav"
-            class="mr-5 md:hidden"
+            class="z-30 mr-5 md:hidden"
           >
             <svg
               class="burgersvg h-7 w-7"
@@ -83,10 +83,10 @@
           <!-- NAVIGATIONS -->
           <nav
             id="nav"
-            class="fixed top-20 bottom-0 -right-full flex w-screen flex-col transition-all md:static md:w-auto md:flex-row md:pr-12 lg:self-center"
+            class="navbg fixed bottom-0 top-0 -right-full z-20 flex w-screen flex-col transition-all md:static md:w-auto md:flex-row md:pr-12 lg:self-center"
           >
             <div
-              class="flex flex-col gap-4 md:grid md:grid-cols-7 md:items-center lg:grid lg:grid-cols-9 lg:flex-row"
+              class="flex flex-col gap-4 pt-56 md:grid md:grid-cols-7 md:items-center md:pt-0 lg:grid lg:grid-cols-9 lg:flex-row"
             >
               <ul
                 class="ml-9 md:col-span-5 md:col-start-1 md:flex md:gap-10 lg:col-start-2"
@@ -105,6 +105,7 @@
                     >Support</a
                   >
                 </li>
+
                 <li>
                   <a
                     class="navfont"
@@ -186,7 +187,11 @@
         <button
           class="btn mt-6 border-4 py-3 px-10"
         >
-          Få din her
+          <a
+            href="/bestil.html"
+            class="btn"
+            >Få din her</a
+          >
         </button>
       </div>
 
@@ -206,7 +211,7 @@
 
     <!---------------------- BANNER SPONSER ------------------------>
     <section
-      class="banner grid h-24 overflow-hidden lg:h-32"
+      class="banner z-10 grid h-24 overflow-hidden lg:h-32"
     >
       <div class="hidden lg:block">
         <div
@@ -808,7 +813,7 @@
     ></script>
     <script
       type="module"
-      src="themefunction.js"
+      src="/themefunctions.js"
     ></script>
   </body>
 </html>

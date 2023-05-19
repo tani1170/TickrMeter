@@ -7,20 +7,24 @@ import "./style.css";
 // Array med billednavne for hver knap
 const images = {
   single: [
-    "/img/placeholder1.jpg",
-    "/img/placeholder2.jpg",
+    "/img/product/single-product1.webp",
+    "/img/product/single-product2.webp",
+    "/img/product/single-product3.webp",
   ],
   twoPack: [
-    "/img/placeholder2.jpg",
-    "/img/placeholder1.jpg",
+    "/img/product/two-product1.webp",
+    "/img/product/two-product2.webp",
+    "/img/product/two-product3.webp",
   ],
   threePack: [
-    "/img/placeholder1.jpg",
-    "/img/placeholder2.jpg",
+    "/img/product/three-product1.webp",
+    "/img/product/three-product2.webp",
+    "/img/product/three-product3.webp",
   ],
   sixPack: [
-    "/img/placeholder2.jpg",
-    "/img/placeholder1.jpg",
+    "/img/product/single-product1.webp",
+    "/img/product/two-product1.webp",
+    "/img/product/three-product1.webp",
   ],
 };
 
