@@ -173,9 +173,9 @@
                   class="iconuser h-6 w-6"
                 ></a>
 
-                <li
+                <button
                   class="iconbasket h-6 w-6"
-                ></li>
+                ></button>
               </ul>
             </div>
           </nav>
@@ -806,5 +806,34 @@
       type="module"
       src="./main.js"
     ></script>
+
+    <script>
+      var root =
+          document.documentElement,
+        theme =
+          window
+            .getComputedStyle(root)
+            .getPropertyValue(
+              "--light"
+            ) === " "
+            ? "dark"
+            : "light";
+
+      document
+        .getElementById("toggle-theme")
+        .addEventListener(
+          "click",
+          toggleTheme
+        );
+
+      function toggleTheme() {
+        root.classList.remove(theme);
+        theme =
+          theme === "dark"
+            ? "light"
+            : "dark";
+        root.classList.add(theme);
+      }
+    </script>
   </body>
 </html>

@@ -9,7 +9,7 @@
     --light: ;
     --dark: initial;
   }
-
+  /* --------------- TYPOGAFI---------------  */
   h1,
   h2,
   h3,
@@ -21,10 +21,14 @@
   .navfont,
   .link,
   label,
-  a {
+  a,
+  .previousstep {
     color: #dce2e4;
   }
 
+  .navfonttheme {
+    color: #dce2e4;
+  }
   .themefont {
     color: #ece8e4;
   }
@@ -50,13 +54,28 @@
       center / cover;
   }
 
+  .iconthemegreen {
+    background: url(img/light-mode-green.svg)
+      center / cover;
+  }
   .iconsetting {
     background: url(img/setting_dark.svg)
       center / cover;
   }
+
+  .iconsettinggreen {
+    background: url(img/setting_green.svg);
+  }
   .iconuser {
     background: url(img/user_dark.svg)
-      center / cover;
+      center / contain;
+  }
+
+  .iconusergreen {
+    background: url(img/user_green.svg);
+  }
+  .iconbasketgreen {
+    background: url(img/basket_green.svg);
   }
   .iconbasket {
     background: url(img/basket_dark.svg)
@@ -78,8 +97,6 @@
   .dropdown .dropbtn {
     color: #dce2e4;
   }
-
-  /* --------------- TYPOGAFI---------------  */
 
   /* --------------- BANNER---------------  */
 
@@ -111,6 +128,35 @@
     background-repeat: no-repeat;
     margin-top: 5px;
   }
+
+  /* --------------- STEPGUIDE---------------  */
+
+  .step1 {
+    background: url(img/step_dark.png)
+      center / cover;
+  }
+  .step2 {
+    background: url(img/step2_dark.png)
+      center / cover;
+  }
+  .step3 {
+    background: url(img/step3_dark.png)
+      center / cover;
+  }
+  .step4 {
+    background: url(img/step4_dark.png)
+      center / cover;
+  }
+  .step5 {
+    background: url(img/step5_dark.png)
+      center / cover;
+  }
+
+  .step6 {
+    background: url(img/step6_dark.png)
+      center / cover;
+  }
+
   /* --------------- BACKGROUND---------------  */
   .themebg {
     background-color: #414559;
@@ -172,10 +218,14 @@
   .navfont,
   .link,
   label,
-  a {
+  a,
+  .previousstep {
     color: #2b2e27;
   }
 
+  .navfonttheme {
+    color: #ece8e4;
+  }
   .themefont {
     color: #dce2e4;
   }
@@ -198,6 +248,7 @@
     color: #2b2e27;
     border-color: #2b2e27;
   }
+
   /* --------------- NAVIGATION---------------  */
   .img-toggle {
     background: url(img/logo_light_pri.svg)
@@ -207,17 +258,32 @@
     background: url(img/light_mode.svg)
       center / cover;
   }
+  .iconthemegreen {
+    background: url(img/dark-mode-green.svg)
+      center / cover;
+  }
   .iconsetting {
     background: url(img/setting_light.svg)
       center / cover;
+  }
+  .iconsettinggreen {
+    background: url(img/setting_green.svg);
   }
   .iconuser {
     background: url(img/user_light.svg)
       center / cover;
   }
+
+  .iconusergreen {
+    background: url(img/user_green.svg);
+  }
   .iconbasket {
     background: url(img/basket_light.svg)
       center / cover;
+  }
+
+  .iconbasketgreen {
+    background: url(img/basket_green.svg);
   }
 
   .burgersvg {
@@ -236,8 +302,33 @@
     color: #ece8e4;
   }
 
-  /* --------------- TYPOGAFI---------------  */
+  /* --------------- STEPGUIDE---------------  */
 
+  .step1 {
+    background: url(img/step_light.png)
+      center / cover;
+  }
+  .step2 {
+    background: url(img/step2_light.png)
+      center / cover;
+  }
+  .step3 {
+    background: url(img/step3_light.png)
+      center / contain;
+  }
+  .step4 {
+    background: url(img/step4_light.png)
+      center / cover;
+  }
+  .step5 {
+    background: url(img/step5_light.png)
+      center / cover;
+  }
+
+  .step6 {
+    background: url(img/step6_light.png)
+      center / cover;
+  }
   /* --------------- BANNER---------------  */
 
   .banner {
@@ -485,6 +576,10 @@ p {
     var(--dark, #dce2e4);
 }
 
+.previousstep {
+  color: var(--light, #2b2e27)
+    var(--dark, #dce2e4);
+}
 .navfont {
   font-size: var(--font-nav);
   font-weight: var(--font-weight-nav);
@@ -497,6 +592,11 @@ p {
 
 .navfont:hover {
   opacity: 80%;
+}
+
+.navfonttheme {
+  color: var(--light, #ece8e4)
+    var(--dark, #dce2e4);
 }
 .link {
   font-size: var(--font-size-link);
@@ -541,6 +641,21 @@ a {
     center / cover;
 }
 
+.logopri {
+  background: url(img/logo_dark_pri.svg)
+    center / cover;
+}
+
+.iconthemegreen {
+  background: var(
+      url(img/dark-mode-green.svg)
+    )
+    var(
+      --dark,
+      url(img/light-mode-green.svg)
+    )
+    center / cover;
+}
 .icontheme {
   background: var(
       --light,
@@ -560,13 +675,29 @@ a {
     )
     center / cover;
 }
-
+.iconsettinggreen {
+  background: var(
+      url(img/setting_green.svg)
+    )
+    var(
+      --dark,
+      url(img/setting_green.svg)
+    )
+    center / cover;
+}
 .iconuser {
   background: var(
       --light,
       url(img/user_light.svg)
     )
     var(--dark, url(img/user_dark.svg))
+    center / cover;
+}
+.iconusergreen {
+  background: var(
+      url(img/user_green.svg)
+    )
+    var(--dark, url(img/user_green.svg))
     center / cover;
 }
 
@@ -582,6 +713,17 @@ a {
     center / cover;
 }
 
+.iconbasketgreen {
+  background: var(
+      url(img/basket_green.svg)
+    )
+    var(
+      --dark,
+      url(img/basket_green.svg)
+    )
+    center / cover;
+}
+
 .burgersvg {
   fill: var(--light, #2b2e27)
     var(--dark, #dce2e4);
@@ -590,6 +732,64 @@ a {
 .navdrop {
   fill: var(--light, #2b2e27)
     var(--dark, #dce2e4);
+}
+
+/* --------------- STEPGUIDE---------------  */
+
+.step1 {
+  background: var(
+      --light,
+      url(img/step_light.png)
+    )
+    var(--dark, url(img/step_dark.png))
+    center / contain;
+  background-repeat: no-repeat;
+}
+.step2 {
+  background: var(
+      --light,
+      url(img/step2_light.png)
+    )
+    var(--dark, url(img/step2_dark.png))
+    center / contain;
+  background-repeat: no-repeat;
+}
+.step3 {
+  background: var(
+      --light,
+      url(img/step3_light.png)
+    )
+    var(--dark, url(img/step3_dark.png))
+    center / contain;
+  background-repeat: no-repeat;
+}
+.step4 {
+  background: var(
+      --light,
+      url(img/step4_light.png)
+    )
+    var(--dark, url(img/step4_dark.png))
+    center / contain;
+  background-repeat: no-repeat;
+}
+.step5 {
+  background: var(
+      --light,
+      url(img/step5_light.png)
+    )
+    var(--dark, url(img/step5_dark.png))
+    center / contain;
+  background-repeat: no-repeat;
+}
+
+.step6 {
+  background: var(
+      --light,
+      url(img/step6_light.png)
+    )
+    var(--dark, url(img/step6_dark.png))
+    center / contain;
+  background-repeat: no-repeat;
 }
 
 /* ---------------------------------------------- NAVGITAION SKIFT VED SCROLL --------------------------------- */

@@ -156,13 +156,13 @@
                 </div>
               </div>
             </ul>
-            <!-- NAVIGATIONS ICONS -->
             <ul
               class="ml-3 flex place-content-end gap-5 md:col-start-7 lg:col-start-9"
             >
-              <li
-                class="iconsetting h-6 w-6"
-              ></li>
+              <button
+                id="toggle-theme"
+                class="icontheme h-6 w-6"
+              ></button>
               <a
                 href="/login.html"
                 class="iconuser h-6 w-6"
@@ -609,5 +609,33 @@
       type="module"
       src="./main.js"
     ></script>
+    <script>
+      var root =
+          document.documentElement,
+        theme =
+          window
+            .getComputedStyle(root)
+            .getPropertyValue(
+              "--light"
+            ) === " "
+            ? "dark"
+            : "light";
+
+      document
+        .getElementById("toggle-theme")
+        .addEventListener(
+          "click",
+          toggleTheme
+        );
+
+      function toggleTheme() {
+        root.classList.remove(theme);
+        theme =
+          theme === "dark"
+            ? "light"
+            : "dark";
+        root.classList.add(theme);
+      }
+    </script>
   </body>
 </html>
