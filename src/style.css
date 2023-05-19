@@ -402,6 +402,8 @@
   }
 }
 
+/* -------------------------- GLOBAL STYLES -------------- */
+
 :root.dark {
   --light: ;
   --dark: initial;
