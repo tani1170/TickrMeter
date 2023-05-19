@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/vite.svg"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.typekit.net/qqu5yej.css"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>TickrMeter</title>
+  </head>
+  <body>
+    <!---------------------- HEADER ------------------------>
+    <section
+      class="grid grid-cols-2 grid-rows-4"
+    >
+      <header
+        class="z-10 col-span-full col-start-1 row-start-1 row-end-2"
+      >
+        <div
+          class="flex w-screen justify-between py-4"
+        >
+          <div class="ml-5 md:ml-10">
+            <a href="/index.html">
+              <div
+                class="img-toggle h-16 w-28"
+              ></div
+            ></a>
+          </div>
+
+          <!-- burger svg -->
+          <button
+            id="toggle"
+            class="mr-5 md:hidden"
+          >
+            <svg
+              class="burgersvg h-7 w-7"
+              aria-hidden="true"
+              viewBox="0 0 100 80"
+              width="40"
+              height="40"
+            >
+              <rect
+                width="90"
+                height="18"
+              ></rect>
+              <rect
+                y="30"
+                x="40"
+                width="70"
+                height="18"
+              ></rect>
+              <rect
+                y="60"
+                x="10"
+                width="80"
+                height="18"
+              ></rect>
+            </svg>
+          </button>
+
+          <!-- NAVIGATIONS -->
+          <nav
+            id="nav"
+            class="fixed top-20 bottom-0 -right-full flex w-screen flex-col transition-all md:static md:hidden md:w-auto md:flex-row md:pr-12"
+          >
+            <div
+              class="flex flex-col gap-4 md:grid md:grid-cols-7 md:items-center lg:grid lg:grid-cols-9 lg:flex-row"
+            >
+              <ul
+                class="ml-9 md:col-span-5 md:col-start-1 md:flex md:gap-10 lg:col-start-2"
+              >
+                <li>
+                  <a
+                    class="navfont"
+                    href="/bestil.html"
+                    >Bestil</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="navfont"
+                    href="/support.html"
+                    >Support</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="navfont"
+                    href="/guide.html"
+                    >Guide</a
+                  >
+                </li>
+                <div class="dropdown">
+                  <button
+                    class="navfont flex items-center"
+                    href="/omos.html"
+                  >
+                    Om Os
+
+                    <svg
+                      class="ml-1 h-5 w-5"
+                      aria-hidden="true"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+
+                  <!-- DROPDOWN MENU -->
+                  <div
+                    class="dropdown-content"
+                  >
+                    <a
+                      class="navfont"
+                      href="/omos.html"
+                      >Hvem er vi?</a
+                    >
+
+                    <a
+                      class="navfont"
+                      href="#"
+                      >Nyheder</a
+                    >
+
+                    <a
+                      class="navfont"
+                      href="#"
+                      >Til
+                      virksomheder</a
+                    >
+                  </div>
+                </div>
+              </ul>
+              <!-- NAVIGATIONS ICONS -->
+              <ul
+                class="ml-3 flex place-content-end gap-5 md:col-start-7 lg:col-start-9"
+              >
+                <li
+                  class="iconsetting h-6 w-6"
+                ></li>
+                <li
+                  class="iconuser h-6 w-6"
+                ></li>
+                <li
+                  class="iconbasket h-6 w-6"
+                ></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!---------------------- SEKTION ------------------------>
+
+      <section
+        class="relative row-span-full row-start-1 mt-28 grid gap-10 hmd:col-span-full hmd:col-start-1 md:mt-0 md:grid-cols-7"
+      >
+        <!---------------------- LOGIN SEKTION ------------------------>
+
+        <div
+          class="animate-slide themebg h-screen px-10 py-20 hmd:px-32 md:col-span-full md:col-start-5 md:row-start-1 md:flex md:flex-col md:place-content-center md:px-10 lg:px-20"
+        >
+          <h3 class="themefont">
+            Velkommen til TickrMeter!
+          </h3>
+
+          <p class="themefont">
+            Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.
+          </p>
+
+          <form class="mt-5">
+            <div class="mb-6">
+              <label
+                for="email"
+                class="themefont"
+                ><p class="themefont">
+                  Email:
+                </p></label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="logininput mt-2 w-full px-3 py-2"
+              />
+            </div>
+            <div class="mb-6">
+              <label
+                for="password"
+                class="themefont"
+                ><p class="themefont">
+                  Adgangskode:
+                </p>
+              </label>
+              <div class="mt-2 flex">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  minlength="8"
+                  required
+                  class="logininput w-full border-0 px-3 py-2 pr-10"
+                />
+                <button
+                  type="button"
+                  onclick="togglePasswordVisibility()"
+                  class="logininput flex items-center whitespace-nowrap border-0 pr-2"
+                >
+                  <p class="">
+                    Vis kode
+                  </p>
+                </button>
+                <span
+                  class="password-indicator"
+                  :class="{'bg-red-500': !isPasswordValid(password), 'bg-green': isPasswordValid(password)}"
+                ></span>
+              </div>
+            </div>
+
+            <div
+              class="mb-6 flex items-center"
+            >
+              <input
+                type="checkbox"
+                id="remember"
+                name="remember"
+                class="custom-checkbox-input checkmark mr-2"
+              />
+              <label for="remember"
+                ><p class="themefont">
+                  Husk mig
+                </p></label
+              >
+            </div>
+
+            <button
+              class="btn themebtn flex w-full justify-center whitespace-nowrap border-4 py-3"
+            >
+              Login
+            </button>
+
+            <div
+              class="flex gap-2 pt-2"
+            >
+              <p class="themefont">
+                Ny her?
+              </p>
+              <a
+                href="/nylogin.html"
+                class="text-green"
+              >
+                Kom igang her
+              </a>
+            </div>
+          </form>
+        </div>
+        <!---------------------- TREDJE ELEMENT ------------------------>
+
+        <div
+          class="absolute left-2/4 top-40 -z-10 hidden h-4/6 w-72 border-y-4 border-x-4 border-green md:block"
+        ></div>
+        <div
+          class="absolute left-32 bottom-0 -z-10 hidden h-40 w-1/2 border-x-4 border-t-4 border-green md:block"
+        ></div>
+
+        <!---------------------- BAGGRUNDSELEMENT ------------------------>
+
+        <div
+          class="hidden self-center md:col-span-4 md:col-start-1 md:row-start-1 md:block"
+        >
+          <div
+            class="grid-row-3 lg: grid grid-cols-2 gap-10 lg:gap-2"
+          >
+            <img
+              class="col-start-2 row-start-1 h-40 self-center md:h-48 lg:grid lg:h-56"
+              src="img/produkt2.png"
+              alt="TickrMeter produkt med rødt lys"
+            />
+
+            <h2
+              class="col-span-full col-start-1 row-start-2 md:grid md:w-4/6 md:justify-self-center lg:mb-10"
+            >
+              Det har aldrig været
+              lettere at følge sine
+              investeringer
+            </h2>
+            <img
+              class="col-start-1 row-start-3 h-40 self-center md:ml-10 md:h-48 lg:h-56"
+              src="img/produkt1.png"
+              alt="TickrMeter produkt med grønt lys"
+            />
+          </div>
+        </div>
+      </section>
+    </section>
+    <script
+      type="module"
+      src="./main.js"
+    ></script>
+
+    <script>
+      function togglePasswordVisibility() {
+        var passwordInput =
+          document.getElementById(
+            "password"
+          );
+        var passwordIndicator =
+          document.querySelector(
+            ".password-indicator"
+          );
+
+        if (
+          passwordInput.type ===
+          "password"
+        ) {
+          passwordInput.type = "text";
+        } else {
+          passwordInput.type =
+            "password";
+        }
+
+        passwordIndicator.classList.toggle(
+          "bg-red",
+          !isPasswordValid(
+            passwordInput.value
+          )
+        );
+        passwordIndicator.classList.toggle(
+          "bg-green",
+          isPasswordValid(
+            passwordInput.value
+          )
+        );
+      }
+
+      function isPasswordValid(
+        password
+      ) {
+        var regex =
+          /^(?=.*[A-Za-z])(?=.*\d).{8,}$/;
+        return regex.test(password);
+      }
+
+      //   HUSK MIG FUNKTION
+
+      const checkbox =
+        document.getElementById(
+          "remember"
+        );
+      const checkmark =
+        document.querySelector(
+          ".checkmark"
+        );
+
+      checkbox.addEventListener(
+        "change",
+        function () {
+          if (checkbox.checked) {
+            checkmark.classList.add(
+              "bg-green"
+            );
+          } else {
+            checkmark.classList.remove(
+              "bg-green"
+            );
+          }
+        }
+      );
+    </script>
+
+    <script>
+      var root =
+          document.documentElement,
+        theme =
+          window
+            .getComputedStyle(root)
+            .getPropertyValue(
+              "--light"
+            ) === " "
+            ? "dark"
+            : "light";
+
+      document
+        .getElementById("toggle-theme")
+        .addEventListener(
+          "click",
+          toggleTheme
+        );
+
+      function toggleTheme() {
+        root.classList.remove(theme);
+        theme =
+          theme === "dark"
+            ? "light"
+            : "dark";
+        root.classList.add(theme);
+      }
+    </script>
+  </body>
+</html>

@@ -2,6 +2,325 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ------------------------------ DARK THEME ------------------------ */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --light: ;
+    --dark: initial;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  p,
+  .btn,
+  .pbold,
+  .navfont,
+  .link,
+  label,
+  a {
+    color: #dce2e4;
+  }
+
+  .themefont {
+    color: #ece8e4;
+  }
+
+  .navfont:hover {
+    opacity: 80%;
+  }
+
+  .link:hover {
+    font-weight: var(
+      --font-weight-link
+    );
+  }
+
+  /* --------------- NAVIGATION---------------  */
+  .img-toggle {
+    background: url(img/logo_dark_pri.svg)
+      center / cover;
+  }
+
+  .icontheme {
+    background: url(img/light_mode.svg)
+      center / cover;
+  }
+
+  .iconsetting {
+    background: url(img/setting_dark.svg)
+      center / cover;
+  }
+  .iconuser {
+    background: url(img/user_dark.svg)
+      center / cover;
+  }
+  .iconbasket {
+    background: url(img/basket_dark.svg)
+      center / cover;
+  }
+
+  .burgersvg {
+    fill: #dce2e4;
+  }
+
+  .navdrop {
+    fill: #dce2e4;
+  }
+  .dropdown-content {
+    background-color: #2b2e27;
+    border-color: #dce2e4;
+  }
+
+  .dropdown .dropbtn {
+    color: #dce2e4;
+  }
+
+  /* --------------- TYPOGAFI---------------  */
+
+  /* --------------- BANNER---------------  */
+
+  .banner {
+    background-color: #414559;
+  }
+
+  .bannerlogo1 {
+    background: url(img/manofmany_dark.svg)
+      center / contain;
+    background-repeat: no-repeat;
+  }
+  .bannerlogo2 {
+    background: url(img/yankodesign_dark.svg)
+      center / cover;
+  }
+  .bannerlogo3 {
+    background: url(img/techtimes_dark.svg)
+      center / cover;
+  }
+
+  .bannerlogo4 {
+    background: url(img/blessthisstuff_dark.svg)
+      center / cover;
+  }
+
+  .newslettercheck {
+    background: url(/img/check.svg);
+    background-repeat: no-repeat;
+    margin-top: 5px;
+  }
+  /* --------------- BACKGROUND---------------  */
+  .themebg {
+    background-color: #414559;
+  }
+
+  .themebtn {
+    border-color: #dce2e4;
+  }
+  .inputfooter {
+    background-color: #414559;
+    border-color: #dce2e4;
+    color: #dce2e4;
+  }
+
+  .logininput {
+    background-color: #dce2e4;
+    color: #2b2e27;
+  }
+  body {
+    background-color: #2b2e27;
+  }
+
+  .packbtn {
+    border-color: #dce2e4;
+    color: #dce2e4;
+    border-width: 2px;
+    height: 3rem;
+  }
+
+  .packbtn:focus {
+    background-color: #dce2e4;
+    color: #2b2e27;
+    border-width: 2px;
+    height: 3rem;
+  }
+
+  .separator {
+    border-bottom: 2px solid;
+    border-color: #dce2e4;
+  }
+}
+
+/* ------------------------------ LIGHT THEME ------------------------ */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --dark: ;
+    --light: initial;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  p,
+  .btn,
+  .pbold,
+  .navfont,
+  .link,
+  label,
+  a {
+    color: #2b2e27;
+  }
+
+  .themefont {
+    color: #dce2e4;
+  }
+
+  .navfont:hover {
+    opacity: 80%;
+  }
+
+  .link:hover {
+    font-weight: var(
+      --font-weight-link
+    );
+  }
+  .btn {
+    font-size: var(--font-btn);
+    font-weight: var(--font-weight-btn);
+    font-family: var(
+      --font-family-raleway
+    );
+    color: #2b2e27;
+    border-color: #2b2e27;
+  }
+  /* --------------- NAVIGATION---------------  */
+  .img-toggle {
+    background: url(img/logo_light_pri.svg)
+      center / cover;
+  }
+  .icontheme {
+    background: url(img/light_mode.svg)
+      center / cover;
+  }
+  .iconsetting {
+    background: url(img/setting_light.svg)
+      center / cover;
+  }
+  .iconuser {
+    background: url(img/user_light.svg)
+      center / cover;
+  }
+  .iconbasket {
+    background: url(img/basket_light.svg)
+      center / cover;
+  }
+
+  .burgersvg {
+    fill: #ece8e4;
+  }
+
+  .navdrop {
+    fill: #ece8e4;
+  }
+  .dropdown-content {
+    background-color: #ece8e4;
+    border-color: #2b2e27;
+  }
+
+  .dropdown .dropbtn {
+    color: #ece8e4;
+  }
+
+  /* --------------- TYPOGAFI---------------  */
+
+  /* --------------- BANNER---------------  */
+
+  .banner {
+    background-color: #2b2e27;
+  }
+
+  .bannerlogo1 {
+    background: url(img/manofmany_light.svg)
+      center / contain;
+    background-repeat: no-repeat;
+  }
+  .bannerlogo2 {
+    background: url(img/yankodesign_light.svg)
+      center / cover;
+  }
+  .bannerlogo3 {
+    background: url(img/techtimes_dark.svg)
+      center / cover;
+  }
+
+  .bannerlogo4 {
+    background: url(img/blessthisstuff_light.svg)
+      center / cover;
+  }
+
+  .newslettercheck {
+    background: url(img/check_dark.svg);
+    background-repeat: no-repeat;
+    margin-top: 5px;
+  }
+  /* --------------- BACKGROUND---------------  */
+  .themebg {
+    background-color: #2b2e27;
+  }
+
+  .themebtn {
+    border-color: #ece8e4;
+    color: #ece8e4;
+  }
+  .inputfooter {
+    background-color: #ece8e4;
+    border-color: #dce2e4;
+    color: #dce2e4;
+  }
+
+  .logininput {
+    background-color: #ece8e4;
+    color: #2b2e27;
+  }
+  body {
+    background-color: #ece8e4;
+  }
+
+  .packbtn {
+    border-color: #ece8e4;
+    color: #ece8e4;
+    border-width: 2px;
+    height: 3rem;
+  }
+
+  .packbtn:focus {
+    background-color: #ece8e4;
+    color: #2b2e27;
+    border-width: 2px;
+    height: 3rem;
+  }
+
+  .separator {
+    border-bottom: 2px solid;
+    border-color: #dce2e4;
+  }
+}
+
+:root.dark {
+  --light: ;
+  --dark: initial;
+}
+
+:root.light {
+  --dark: ;
+  --light: initial;
+}
+
 :root {
   /* font family */
   --font-family-futura: "futura-pt",
@@ -78,7 +397,11 @@
 /* --------------------------------------------- STYLES ------------------------------------------------- */
 
 body {
-  background-color: #ece8e4;
+  background-color: var(
+      --light,
+      #ece8e4
+    )
+    var(--dark, #2b2e27);
 }
 
 /* ----------------------------------------------- TYPOGRAFI ----------------------------------- */
@@ -88,7 +411,8 @@ h1 {
   font-family: var(
     --font-family-futura
   );
-  color: #2b2e27;
+  color: var(--light, #2b2e27)
+    var(--dark, #dce2e4);
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -99,13 +423,15 @@ h2 {
   font-family: var(
     --font-family-futura
   );
-  color: #2b2e27;
+  color: var(--light, #2b2e27)
+    var(--dark, #dce2e4);
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .themefont {
-  color: #ece8e4;
+  color: var(--dark, #ece8e4)
+    var(--light, #dce2e4);
 }
 
 h3 {
@@ -114,7 +440,8 @@ h3 {
   font-family: var(
     --font-family-raleway
   );
-  color: #2b2e27;
+  color: var(--light, #2b2e27)
+    var(--dark, #dce2e4);
 }
 
 h4 {
@@ -123,7 +450,8 @@ h4 {
   font-family: var(
     --font-family-raleway
   );
-  color: #2b2e27;
+  color: var(--light, #2b2e27)
+    var(--dark, #dce2e4);
 }
 
 .btn {
@@ -132,7 +460,10 @@ h4 {
   font-family: var(
     --font-family-raleway
   );
-  color: #2b2e27;
+  color: var(--light, #2b2e27)
+    var(--dark, #dce2e4);
+  border-color: var(--light, #2b2e27)
+    var(--dark, #dce2e4);
 }
 p {
   font-size: var(--font-base);
@@ -140,7 +471,8 @@ p {
   font-family: var(
     --font-family-raleway
   );
-  color: #2b2e27;
+  color: var(--light, #2b2e27)
+    var(--dark, #dce2e4);
 }
 
 .pbold {
@@ -149,7 +481,8 @@ p {
   font-family: var(
     --font-family-raleway
   );
-  color: #2b2e27;
+  color: var(--light, #2b2e27)
+    var(--dark, #dce2e4);
 }
 
 .navfont {
@@ -158,7 +491,8 @@ p {
   font-family: var(
     --font-family-futura
   );
-  color: #2b2e27;
+  color: var(--light, #2b2e27)
+    var(--dark, #dce2e4);
 }
 
 .navfont:hover {
@@ -171,7 +505,8 @@ p {
     --font-family-raleway
   );
   text-decoration: underline;
-  color: #2b2e27;
+  color: var(--light, #2b2e27)
+    var(--dark, #dce2e4);
 }
 
 .link:hover {
@@ -179,7 +514,8 @@ p {
 }
 
 label {
-  color: #2b2e27;
+  color: var(--light, #2b2e27)
+    var(--dark, #dce2e4);
 }
 
 a {
@@ -188,35 +524,74 @@ a {
   font-family: var(
     --font-family-raleway
   );
-  color: #2b2e27;
+  color: var(--light, #2b2e27)
+    var(--dark, #dce2e4);
 }
 /* --------------------------------------------- IMG/ICONS -------------------------------------- */
 
 .img-toggle {
-  background: url(img/logo_light_pri.svg)
+  background: var(
+      --light,
+      url(img/logo_light_pri.svg)
+    )
+    var(
+      --dark,
+      url(img/logo_dark_pri.svg)
+    )
     center / cover;
 }
 
+.icontheme {
+  background: var(
+      --light,
+      url(img/dark_mode.svg)
+    )
+    var(--dark, url(img/light_mode.svg))
+    center / cover;
+}
 .iconsetting {
-  background: url(img/setting_light.svg)
+  background: var(
+      --light,
+      url(img/setting_light.svg)
+    )
+    var(
+      --dark,
+      url(img/setting_dark.svg)
+    )
     center / cover;
 }
+
 .iconuser {
-  background: url(img/user_light.svg)
+  background: var(
+      --light,
+      url(img/user_light.svg)
+    )
+    var(--dark, url(img/user_dark.svg))
     center / cover;
 }
+
 .iconbasket {
-  background: url(img/basket_light.svg)
+  background: var(
+      --light,
+      url(img/basket_light.svg)
+    )
+    var(
+      --dark,
+      url(img/basket_dark.svg)
+    )
     center / cover;
 }
 
 .burgersvg {
-  fill: #2b2e27;
+  fill: var(--light, #2b2e27)
+    var(--dark, #dce2e4);
 }
 
 .navdrop {
-  fill: #2b2e27;
+  fill: var(--light, #2b2e27)
+    var(--dark, #dce2e4);
 }
+
 /* ---------------------------------------------- NAVGITAION SKIFT VED SCROLL --------------------------------- */
 
 /* ---------------------------------------------- DROP DOWN --------------------------------- */
@@ -229,7 +604,8 @@ a {
   font-size: 16px;
   border: none;
   outline: none;
-  color: #2b2e27;
+  color: var(--light, #2b2e27)
+    var(--dark, #dce2e4);
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -239,8 +615,13 @@ a {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #ece8e4;
-  border-color: #2b2e27;
+  background-color: var(
+      --light,
+      #ece8e4
+    )
+    var(--dark, #2b2e27);
+  border-color: var(--light, #2b2e27)
+    var(--dark, #dce2e4);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px
     rgba(0, 0, 0, 0.2);
@@ -261,68 +642,133 @@ a {
 
 /* --------------------------------------------------- OTHER STYLES -------------------- */
 .banner {
-  background-color: #2b2e27;
+  background-color: var(
+      --light,
+      #2b2e27
+    )
+    var(--dark, #414559);
 }
 
 .bannerlogo1 {
-  background: url(img/manofmany_light.svg)
+  background: var(
+      --light,
+      url(img/manofmany_light.svg)
+    )
+    var(
+      --dark,
+      url(img/manofmany_dark.svg)
+    )
     center / contain;
   background-repeat: no-repeat;
 }
 .bannerlogo2 {
-  background: url(img/yankodesign_light.svg)
+  background: var(
+      --light,
+      url(img/yankodesign_light.svg)
+    )
+    var(
+      --dark,
+      url(img/yankodesign_dark.svg)
+    )
     center / cover;
 }
 .bannerlogo3 {
-  background: url(img/techtimes_light.svg)
+  background: var(
+      --light,
+      url(img/techtimes_light.svg)
+    )
+    var(
+      --dark,
+      url(img/techtimes_dark.svg)
+    )
     center / cover;
 }
 
 .bannerlogo4 {
-  background: url(img/blessthisstuff_light.svg)
+  background: var(
+      --light,
+      url(img/blessthisstuff_light.svg)
+    )
+    var(
+      --dark,
+      url(img/blessthisstuff_dark.svg)
+    )
     center / cover;
 }
 
 .newslettercheck {
-  background: url(img/check_dark.svg)
+  background: var(
+      --light,
+      url(img/check_dark.svg)
+    )
+    var(--dark, url(img/check.svg))
     center / contain;
   background-repeat: no-repeat;
 }
 /* ------------------------------------------------BACKGROUND -------------------- */
 
 .themebg {
-  background-color: #2b2e27;
+  background-color: var(
+      --light,
+      #2b2e27
+    )
+    var(--dark, #414559);
 }
 
 .themebtn {
-  border-color: #ece8e4;
-  color: #ece8e4;
+  border-color: var(--light, #ece8e4)
+    var(--dark, #dce2e4);
+  color: var(--light, #ece8e4)
+    var(--dark, #dce2e4);
 }
 
 .inputfooter {
-  background-color: #ece8e4;
-  border-color: #2b2e27;
-  color: #2b2e27;
+  background-color: var(
+      --light,
+      #ece8e4
+    )
+    var(--dark, #414559);
+  border-color: var(--light, #2b2e27)
+    var(--dark, #dce2e4);
+  color: var(--light, #2b2e27)
+    var(--dark, #dce2e4);
 }
 
 .logininput {
-  background-color: #ece8e4;
+  background-color: var(
+      --light,
+      #ece8e4
+    )
+    var(--dark, #dce2e4);
   color: #2b2e27;
 }
 
 .packbtn {
-  border-color: #2b2e27;
+  border-color: var(--light, #2b2e27)
+    var(--dark, #dce2e4);
   height: 3rem;
-  color: #2b2e27;
+  color: var(--light, #2b2e27)
+    var(--dark, #dce2e4);
   border-width: 2px;
   height: 3rem;
 }
 
 .packbtn:focus {
-  background-color: #2b2e27;
-  color: #ece8e4;
+  background-color: var(
+      --light,
+      #2b2e27
+    )
+    var(--dark, #dce2e4);
+  color: var(--light, #ece8e4)
+    var(--dark, #2b2e27);
   border-width: 2px;
   height: 3rem;
+}
+
+.separator {
+  border-bottom: 2px solid;
+  border-color: var(--light, #ece8e4)
+    var(--dark, #dce2e4);
 }
 
 /* BANNER FUNKTION */
@@ -377,11 +823,6 @@ a {
   padding-top: 10px;
 }
 
-.separator {
-  border-bottom: 2px solid;
-  border-color: #ece8e4;
-}
-
 /* ------------- ADGANGSKODE KRAV */
 .password-indicator {
   width: 10px;
@@ -391,6 +832,29 @@ a {
 
 .checkmark:checked {
   background-color: #0eb663;
+}
+
+/* ---------- */
+.testimonial-section {
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex; /* Tilføjer flex-container */
+}
+
+.testimonial-box {
+  flex: 0 0 auto;
+  min-width: 14rem;
+  max-width: 18rem;
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
+}
+
+.testimonial-content {
+  flex-grow: 1; /* Udvider indholdet for at justere vertikalt */
+}
+
+@media (max-width: 640px) {
 }
 /* --------------------------------------------------- IPAD TIL DESKTOP MEDIA RULES -------------------- */
 
@@ -433,157 +897,6 @@ a {
   }
 }
 
-/* -------------------------------------------------- PREFERS DARK THEME ------------------------ */
-@media (prefers-color-scheme: dark) {
-  /* --------------- NAVIGATION---------------  */
-  .img-toggle {
-    background: url(img/logo_dark_pri.svg)
-      center / cover;
-  }
+/* -------------------------------------------------- PREFERS THEME ------------------------ */
 
-  .iconsetting {
-    background: url(img/setting_dark.svg)
-      center / cover;
-  }
-  .iconuser {
-    background: url(img/user_dark.svg)
-      center / cover;
-  }
-  .iconbasket {
-    background: url(img/basket_dark.svg)
-      center / cover;
-  }
-
-  .burgersvg {
-    fill: #dce2e4;
-  }
-
-  .navdrop {
-    fill: #dce2e4;
-  }
-  .dropdown-content {
-    background-color: #2b2e27;
-    border-color: #dce2e4;
-  }
-
-  .dropdown .dropbtn {
-    color: #dce2e4;
-  }
-
-  /* --------------- TYPOGAFI---------------  */
-
-  h1 {
-    color: #dce2e4;
-  }
-
-  h2 {
-    color: #dce2e4;
-  }
-
-  .themefont {
-    color: #dce2e4;
-  }
-
-  h3 {
-    color: #dce2e4;
-  }
-
-  h4 {
-    color: #dce2e4;
-  }
-
-  p {
-    color: #dce2e4;
-  }
-
-  .pbold {
-    color: #dce2e4;
-  }
-
-  .navfont {
-    color: #dce2e4;
-  }
-
-  .link {
-    color: #dce2e4;
-  }
-
-  label {
-    color: #dce2e4;
-  }
-
-  a {
-    color: #dce2e4;
-  }
-  /* --------------- BANNER---------------  */
-
-  .banner {
-    background-color: #414559;
-  }
-
-  .bannerlogo1 {
-    background: url(img/manofmany_dark.svg)
-      center / contain;
-    background-repeat: no-repeat;
-  }
-  .bannerlogo2 {
-    background: url(img/yankodesign_dark.svg)
-      center / cover;
-  }
-  .bannerlogo3 {
-    background: url(img/techtimes_dark.svg)
-      center / cover;
-  }
-
-  .bannerlogo4 {
-    background: url(img/blessthisstuff_dark.svg)
-      center / cover;
-  }
-
-  .newslettercheck {
-    background: url(/img/check.svg);
-    background-repeat: no-repeat;
-    margin-top: 5px;
-  }
-  /* --------------- BACKGROUND---------------  */
-  .themebg {
-    background-color: #414559;
-  }
-
-  .themebtn {
-    border-color: #dce2e4;
-  }
-  .inputfooter {
-    background-color: #414559;
-    border-color: #dce2e4;
-    color: #dce2e4;
-  }
-
-  .logininput {
-    background-color: #dce2e4;
-    color: #2b2e27;
-  }
-
-  body {
-    background-color: #2b2e27;
-  }
-
-  .packbtn {
-    border-color: #dce2e4;
-    color: #dce2e4;
-    border-width: 2px;
-    height: 3rem;
-  }
-
-  .packbtn:focus {
-    background-color: #dce2e4;
-    color: #2b2e27;
-    border-width: 2px;
-    height: 3rem;
-  }
-
-  .separator {
-    border-bottom: 2px solid;
-    border-color: #dce2e4;
-  }
-}
+/* ------------------------------ DARK THEME ------------------------ */
