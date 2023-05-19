@@ -49,7 +49,7 @@
 
         <!-- burger svg -->
         <button
-          id="toggle"
+          id="togglenav"
           class="mr-5 md:hidden"
         >
           <svg
@@ -609,33 +609,14 @@
       type="module"
       src="./main.js"
     ></script>
-    <script>
-      var root =
-          document.documentElement,
-        theme =
-          window
-            .getComputedStyle(root)
-            .getPropertyValue(
-              "--light"
-            ) === " "
-            ? "dark"
-            : "light";
 
-      document
-        .getElementById("toggle-theme")
-        .addEventListener(
-          "click",
-          toggleTheme
-        );
-
-      function toggleTheme() {
-        root.classList.remove(theme);
-        theme =
-          theme === "dark"
-            ? "light"
-            : "dark";
-        root.classList.add(theme);
-      }
-    </script>
+    <script
+      type="module"
+      src="themefunction.js"
+    ></script>
+    <script
+      type="module"
+      src="navigation.js"
+    ></script>
   </body>
 </html>
