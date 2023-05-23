@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/vite.svg"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.typekit.net/qqu5yej.css"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>TickrMeter</title>
+  </head>
+  <body>
+    <!---------------------- HEADER ------------------------>
+    <header
+      class="fixed z-10 col-span-full col-start-1 row-start-1 row-end-2"
+    >
+      <div
+        class="flex w-screen justify-between py-4"
+      >
+        <div class="ml-5 md:ml-10">
+          <a href="/index.html">
+            <div
+              class="img-toggle h-16 w-28"
+            ></div>
+          </a>
+        </div>
+
+        <!-- burger svg -->
+        <button
+          id="togglenav"
+          class="z-30 mr-5 md:hidden"
+        >
+          <svg
+            class="burgersvg h-7 w-7"
+            aria-hidden="true"
+            viewBox="0 0 100 80"
+            width="40"
+            height="40"
+          >
+            <rect
+              width="90"
+              height="18"
+            ></rect>
+            <rect
+              y="30"
+              x="40"
+              width="70"
+              height="18"
+            ></rect>
+            <rect
+              y="60"
+              x="10"
+              width="80"
+              height="18"
+            ></rect>
+          </svg>
+        </button>
+
+        <!-- NAVIGATIONS -->
+        <nav
+          id="nav"
+          class="navbg fixed bottom-0 top-0 -right-full z-20 flex w-screen flex-col pt-56 transition-all md:static md:hidden md:w-auto md:flex-row md:pt-0 md:pr-12"
+        >
+          <div
+            class="flex flex-col gap-4 md:grid md:grid-cols-7 md:items-center lg:grid lg:grid-cols-9 lg:flex-row"
+          >
+            <ul
+              class="ml-9 md:col-span-5 md:col-start-1 md:flex md:gap-10 lg:col-start-2"
+            >
+              <li>
+                <a
+                  class="navfont"
+                  href="/bestil.html"
+                  >Bestil</a
+                >
+              </li>
+              <li>
+                <a
+                  class="navfont"
+                  href="/support.html"
+                  >Support</a
+                >
+              </li>
+              <li>
+                <a
+                  class="navfont"
+                  href="/guide.html"
+                  >Guide</a
+                >
+              </li>
+              <div class="dropdown">
+                <button
+                  class="navfont flex items-center"
+                  href="/omos.html"
+                >
+                  Om Os
+                  <svg
+                    class="ml-1 h-5 w-5"
+                    aria-hidden="true"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+
+                <!-- DROPDOWN MENU -->
+                <div
+                  class="dropdown-content"
+                >
+                  <a
+                    class="navfont"
+                    href="/omos.html"
+                    >Hvem er vi?</a
+                  >
+                  <a
+                    class="navfont"
+                    href="#"
+                    >Nyheder</a
+                  >
+                  <a
+                    class="navfont"
+                    href="#"
+                    >Til virksomheder</a
+                  >
+                </div>
+              </div>
+            </ul>
+            <!-- NAVIGATIONS ICONS -->
+            <ul
+              class="ml-3 flex place-content-end gap-5 md:col-start-7 lg:col-start-9"
+            >
+              <li
+                class="iconsetting h-6 w-6"
+              ></li>
+              <li
+                class="iconuser h-6 w-6"
+              ></li>
+              <li
+                class="iconbasket h-6 w-6"
+              ></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main
+      class="grid h-screen grid-cols-6"
+      x-data="{ currentStep: 1, fullName: '', email: '', address: '', floor: '', city: '', postcode: '', paymentMethod: '' }"
+    >
+      <div
+        class="col-start-1 col-end-5 mt-10"
+      >
+        <!----- TRINOVERSIGT ----->
+        <div
+          class="mb-6 grid grid-cols-9 grid-rows-4"
+        >
+          <div
+            class="col-start-4 row-start-1 mb-4"
+          >
+            <ul class="flex">
+              <li
+                class="mr-4"
+                :class="{ 'font-bold': currentStep === 1 }"
+              >
+                Bruger
+              </li>
+              <li
+                class="mr-4"
+                :class="{ 'font-bold': currentStep === 2 }"
+              >
+                Levering
+              </li>
+              <li
+                class="mr-4"
+                :class="{ 'font-bold': currentStep === 3 }"
+              >
+                Betaling
+              </li>
+              <li
+                class="mr-4"
+                :class="{ 'font-bold': currentStep === 4 }"
+              >
+                Oversigt
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-span-7 col-start-2 row-span-full row-start-2"
+          >
+            <!----- TRIN 1 - BRUGEROPLYSNINGER  ----->
+            <div
+              class="themebg min-h-96 px-20 py-10"
+              x-show="currentStep === 1"
+            >
+              <h2 class="themefont">
+                Brugeroplysninger
+              </h2>
+              <span
+                class="separator mb-8 flex w-full"
+              ></span>
+              <div class="flex">
+                <div>
+                  <label
+                    for="fullname"
+                    class="themefont"
+                    >Fuldenavn</label
+                  >
+                  <input
+                    id="fullname"
+                    x-model="fullName"
+                    type="text"
+                    placeholder="Fulde navn"
+                    class="mb-2 w-full rounded border py-2 px-3"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="themefont"
+                    >Email</label
+                  >
+                  <input
+                    x-model="email"
+                    type="email"
+                    placeholder="min@email.dk"
+                    class="mb-2 w-full rounded border py-2 px-3"
+                  />
+                </div>
+              </div>
+              <div class="flex">
+                <div>
+                  <label
+                    for="password"
+                    class="themefont"
+                    >Adgangskode</label
+                  >
+                  <input
+                    type="password"
+                    placeholder="Adgangskode"
+                    class="mb-2 w-full rounded border py-2 px-3"
+                  />
+                </div>
+                <div>
+                  <label
+                    class="themefont"
+                    for="repeatpassword"
+                    >Gentag
+                    adgangskode</label
+                  >
+                  <input
+                    type="password"
+                    placeholder="Gentag adgangskode"
+                    class="mb-2 w-full rounded border py-2 px-3"
+                  />
+                </div>
+              </div>
+              <button
+                class="logininput flex items-center whitespace-nowrap border-0 pr-2"
+                @click="currentStep = 2"
+              >
+                Videre
+              </button>
+            </div>
+
+            <!----- TRIN 2 - LEVERING  ----->
+            <div
+              class="themebg"
+              x-show="currentStep === 2"
+            >
+              <h2 class="themefont">
+                Leveringsoplysninger
+              </h2>
+              <div>
+                <label
+                  for="address"
+                  class="themefont"
+                  >Adresse</label
+                >
+                <input
+                  id="address"
+                  x-model="address"
+                  type="text"
+                  placeholder="Vejgadenavn 32"
+                  class="border-gray-300 mb-2 w-full rounded border py-2 px-3"
+                />
+              </div>
+              <div>
+                <label
+                  for="floor"
+                  class="themefont"
+                  >Etage</label
+                >
+                <input
+                  id="floor"
+                  x-model="floor"
+                  type="text"
+                  placeholder="4.tv"
+                  class="border-gray-300 mb-2 w-full rounded border py-2 px-3"
+                />
+              </div>
+              <div>
+                <label
+                  for="city"
+                  class="themefont"
+                  >By</label
+                >
+                <input
+                  id="city"
+                  x-model="city"
+                  type="text"
+                  placeholder="København Ø"
+                  class="border-gray-300 mb-2 w-full rounded border py-2 px-3"
+                />
+              </div>
+              <div>
+                <label
+                  for="postcode"
+                  class="themefont"
+                  >Post. nr</label
+                >
+                <input
+                  id="postcode"
+                  x-model="postcode"
+                  type="text"
+                  placeholder="2100"
+                  class="border-gray-300 mb-2 w-full rounded border py-2 px-3"
+                />
+              </div>
+              <button
+                class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4"
+                @click="currentStep = 3"
+              >
+                Videre
+              </button>
+              <button
+                class="border-gray-300 text-blue-500 hover:text-blue-600 ml-2 border py-2 px-4"
+                @click="currentStep = 1"
+              >
+                Tilbage
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="themebg"
+            x-show="currentStep === 3"
+          >
+            <h2 class="themefont mb-2">
+              Betaling
+            </h2>
+            <input
+              x-model="paymentMethod"
+              type="text"
+              placeholder="Betalingsmetode"
+              class="border-gray-300 mb-2 w-full rounded border py-2 px-3"
+            />
+            <button
+              class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4"
+              @click="currentStep = 4"
+            >
+              Videre
+            </button>
+            <button
+              class="border-gray-300 text-blue-500 hover:text-blue-600 ml-2 border py-2 px-4"
+              @click="currentStep = 2"
+            >
+              Tilbage
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- DIN ORDRE -->
+      <div
+        class="themebg col-start-5 col-end-7 p-10"
+      >
+        <h2 class="themefont">
+          Din ordre
+        </h2>
+        <span
+          class="separator flex w-full"
+        ></span>
+        <div x-show="currentStep === 4">
+          <h2
+            class="mb-2 text-xl font-bold"
+          >
+            Oversigt
+          </h2>
+          <p>
+            Bruger:
+            <span
+              x-text="fullName + ', ' + email"
+            ></span>
+          </p>
+          <!-- <p>
+          Email:
+          <span
+            x-text="email"
+          ></span>
+        </p> -->
+          <p>
+            Levering:
+            <span
+              x-text="address + ', ' + floor + ', ' + city + ', ' + postcode"
+            ></span>
+          </p>
+          <p>
+            Betaling:
+            <span
+              x-text="paymentMethod"
+            ></span>
+          </p>
+          <button
+            class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4"
+            @click="confirmOrder"
+          >
+            Bekræft
+          </button>
+          <button
+            class="border-gray-300 text-blue-500 hover:text-blue-600 ml-2 border py-2 px-4"
+            @click="currentStep = 3"
+          >
+            Tilbage
+          </button>
+        </div>
+      </div>
+    </main>
+    <script
+      type="module"
+      src="./main.js"
+    ></script>
+    <script
+      type="module"
+      src="navigation.js"
+    ></script>
+    <script
+      src="//unpkg.com/alpinejs"
+      defer
+    ></script>
+    <script>
+      function confirmOrder() {
+        var name =
+          document.getElementById(
+            "fullname"
+          ).value;
+        var address =
+          document.getElementById(
+            "address"
+          ).value;
+        var paymentMethod =
+          document.getElementById(
+            "paymentMethod"
+          ).value;
+
+        alert(
+          "Bekræftet!\n\nNavn: " +
+            name +
+            "\nAdresse: " +
+            address +
+            "\nBetalingsmetode: " +
+            paymentMethod
+        );
+      }
+    </script>
+  </body>
+</html>

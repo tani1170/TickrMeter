@@ -6,6 +6,10 @@ import {
   scroll,
 } from "motion";
 
+import Alpine from "alpinejs";
+window.Alpine = Alpine;
+Alpine.start();
+
 scroll(
   animate(".progress-bar", {
     scaleX: [0, 1],

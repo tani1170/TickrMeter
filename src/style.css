@@ -171,6 +171,10 @@
   .themebtn {
     border-color: #dce2e4;
   }
+
+  .themebtn:hover {
+    color: #2b2e27;
+  }
   .inputfooter {
     background-color: #414559;
     border-color: #dce2e4;
@@ -378,6 +382,10 @@
     border-color: #ece8e4;
     color: #ece8e4;
   }
+  .themebtn:hover {
+    color: #2b2e27;
+  }
+
   .inputfooter {
     background-color: #ece8e4;
     border-color: #dce2e4;
@@ -413,6 +421,28 @@
 }
 
 /* -------------------------- GLOBAL STYLES -------------- */
+
+.shake {
+  animation: shake 0.4s linear;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
 :root.dark {
   --light: ;
@@ -568,6 +598,7 @@ h4 {
   border-color: var(--light, #2b2e27)
     var(--dark, #dce2e4);
 }
+
 p {
   font-size: var(--font-base);
   font-weight: var(--font-weight-body);
@@ -746,6 +777,63 @@ a {
     var(--dark, #dce2e4);
 }
 
+/* --------------- KNAPPER ---------------  */
+
+.btn-pri,
+.themepri {
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-pri:before {
+  aspect-ratio: 1;
+  background: var(--light, #2b2e27)
+    var(--dark, #dce2e4);
+
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s;
+  width: 0;
+  z-index: -10;
+}
+.btn-pri:hover:before {
+  width: 100%;
+  z-index: -10;
+}
+
+.btn-pri:hover {
+  color: var(--dark, #2b2e27)
+    var(--light, #ece8e4);
+}
+
+.themepri:before {
+  aspect-ratio: 1;
+  background: var(--light, #ece8e4)
+    var(--dark, #dce2e4);
+
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s;
+  width: 0;
+}
+.themepri:hover:before {
+  width: 100%;
+}
+
+.themepri:hover {
+  color: #2b2e27;
+  z-index: 20;
+}
+
+#themesubbtn a:hover {
+  color: #2b2e27;
+}
 /* --------------- STEPGUIDE---------------  */
 
 .step1 {
@@ -1113,6 +1201,43 @@ a {
   }
 }
 
-/* -------------------------------------------------- PREFERS THEME ------------------------ */
-
-/* ------------------------------ DARK THEME ------------------------ */
+/* test købsflow */
+.step {
+  display: none;
+}
+.step.active {
+  display: block;
+}
+.step-header {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.step-header .step-number {
+  font-weight: bold;
+}
+.step-header .step-title {
+  margin-left: 10px;
+}
+.step-controls {
+  margin-top: 20px;
+}
+.summary {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.summary-item {
+  margin-bottom: 5px;
+}
+.step-indicator {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.step-indicator-item {
+  flex: 1;
+  text-align: center;
+}
+.step-indicator-item.active {
+  font-weight: bold;
+}
