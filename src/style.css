@@ -171,10 +171,6 @@
   .themebtn {
     border-color: #dce2e4;
   }
-
-  .themebtn:hover {
-    color: #2b2e27;
-  }
   .inputfooter {
     background-color: #414559;
     border-color: #dce2e4;
@@ -382,10 +378,6 @@
     border-color: #ece8e4;
     color: #ece8e4;
   }
-  .themebtn:hover {
-    color: #2b2e27;
-  }
-
   .inputfooter {
     background-color: #ece8e4;
     border-color: #dce2e4;
@@ -779,61 +771,51 @@ a {
 
 /* --------------- KNAPPER ---------------  */
 
-.btn-pri,
-.themepri {
-  overflow: hidden;
+.btn-pri {
   position: relative;
+  display: inline-block;
+  background-image: var(
+      --light,
+      linear-gradient(#2b2e27, #2b2e27)
+    )
+    var(
+      --dark,
+      linear-gradient(#dce2e4, #dce2e4)
+    );
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.5s,
+    color 0.5s;
 }
-
-.btn-pri:before {
-  aspect-ratio: 1;
-  background: var(--light, #2b2e27)
-    var(--dark, #dce2e4);
-
-  content: "";
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  transition: width 0.2s;
-  width: 0;
-  z-index: -10;
-}
-.btn-pri:hover:before {
-  width: 100%;
-  z-index: -10;
-}
-
 .btn-pri:hover {
-  color: var(--dark, #2b2e27)
-    var(--light, #ece8e4);
+  background-size: 100% 100%;
+  color: var(--light, #ece8e4)
+    var(--dark, #2b2e27);
 }
 
-.themepri:before {
-  aspect-ratio: 1;
-  background: var(--light, #ece8e4)
-    var(--dark, #dce2e4);
+.themesubbtn {
+  position: relative;
+  display: inline-block;
+  background-image: var(
+      --light,
+      linear-gradient(#ece8e4, #ece8e4)
+    )
+    var(
+      --dark,
+      linear-gradient(#dce2e4, #dce2e4)
+    );
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.5s,
+    color 0.5s;
+}
+.themesubbtn:hover {
+  background-size: 100% 100%;
+  color: var(--light, #2b2e27);
+}
 
-  content: "";
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  transition: width 0.2s;
-  width: 0;
-}
-.themepri:hover:before {
-  width: 100%;
-}
-
-.themepri:hover {
-  color: #2b2e27;
-  z-index: 20;
-}
-
-#themesubbtn a:hover {
-  color: #2b2e27;
-}
 /* --------------- STEPGUIDE---------------  */
 
 .step1 {
