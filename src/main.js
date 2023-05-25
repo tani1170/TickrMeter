@@ -16,17 +16,14 @@ scroll(
   })
 );
 
-inView(
-  ".functions",
+inView(".fotofromright", () => {
+  animate(
+    ".fotofromright",
+    { x: [2000, 0] },
+    { duration: 1 }
+  );
+});
 
-  () => {
-    animate(
-      ".functions",
-      { x: [-2000, 0] },
-      { duration: 1 }
-    );
-  }
-);
 // STYRER DARK MODE -----------------
 // On page load or when changing themes, best to add inline in `head` to avoid FOUC
 if (
