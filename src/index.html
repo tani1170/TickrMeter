@@ -205,6 +205,13 @@
       <div
         class="over -z-10 col-span-4 col-start-7 row-start-1 h-[40rem] bg-green hmd:h-[45rem]"
       ></div>
+
+      <button
+        class="down-btn inset-x-1/2 bottom-24 h-14 w-14 justify-center rounded-full border-4 border-green hover:bg-green"
+        onclick="scrollToSection('section2')"
+      >
+        <span class="down-icon"></span>
+      </button>
     </section>
 
     <!---------------------- BANNER SPONSER ------------------------>
@@ -293,6 +300,7 @@
     <!---------------------- FUNCTIONS ------------------------>
 
     <section
+      id="section2"
       class="relative px-5 py-14"
     >
       <!-- TREDJE ELEMENT -->
@@ -855,6 +863,19 @@
           mybutton.style.display =
             "none";
         }
+      }
+
+      // scroll ned section
+      function scrollToSection(
+        sectionId
+      ) {
+        const section =
+          document.getElementById(
+            sectionId
+          );
+        section.scrollIntoView({
+          behavior: "smooth",
+        });
       }
     </script>
   </body>

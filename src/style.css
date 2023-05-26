@@ -797,6 +797,35 @@ a {
   display: none;
   z-index: 20;
 }
+.down-btn {
+  cursor: pointer;
+  position: absolute;
+  z-index: 20;
+}
+.down-icon {
+  background-image: url(/img/arrow-green.svg);
+  margin-top: 5px;
+  width: 30px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+
+.down-icon:hover {
+  background-image: var(
+      --light,
+      url(/img/arrow-light.svg)
+    )
+    var(
+      --dark,
+      url(/img/arrow-dark.svg)
+    );
+  z-index: 99;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
 
 .top-icon {
   background-image: url(/img/arrow-green.svg);
