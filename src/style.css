@@ -307,6 +307,14 @@
   .dropdown .dropbtn {
     color: #ece8e4;
   }
+
+  .top-icon:hover {
+    background-image: var(
+      --light,
+      url(/img/top-down-light.svg)
+    );
+  }
+
   @media (max-width: 1024px) {
     .navbg {
       background-color: #ece8e4;
@@ -769,6 +777,54 @@ a {
     var(--dark, #dce2e4);
 }
 
+/* .top-down-btn {
+  background: url(img/top-down-btn.svg)
+    center / cover;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+…  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+} */
+
+.top-btn {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  display: none;
+  z-index: 20;
+}
+
+.top-icon {
+  background-image: url(/img/arrow-green.svg);
+  rotate: 180deg;
+  margin-top: 5px;
+  width: 30px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+
+.top-icon:hover {
+  background-image: var(
+      --light,
+      url(/img/arrow-light.svg)
+    )
+    var(
+      --dark,
+      url(/img/arrow-dark.svg)
+    );
+  z-index: 99;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  rotate: 180deg;
+}
+
 /* --------------- KNAPPER ---------------  */
 
 .btn-pri {
@@ -1225,15 +1281,13 @@ a {
 }
 
 #slider {
-  position: absolute;
-
   transform: translateX(-100%);
   -webkit-transform: translateX(-100%);
 }
 
 .slide-in {
-  animation: slide-in 0.5s forwards;
-  -webkit-animation: slide-in 0.5s
+  animation: slide-in 1 1.5s forwards;
+  -webkit-animation: slide-in 1.5s
     forwards;
 }
 @keyframes slide-in {

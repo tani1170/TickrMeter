@@ -281,7 +281,15 @@
         </div>
       </div>
     </section>
+    <!---------------------- TO TOP BUTTON ------------------------>
 
+    <button
+      onclick="topFunction()"
+      class="top-btn h-14 w-14 rounded-full border-4 border-green hover:bg-green"
+      id="mybutton"
+    >
+      <span class="top-icon"></span>
+    </button>
     <!---------------------- FUNCTIONS ------------------------>
 
     <section
@@ -311,16 +319,15 @@
         class="hmd: flex flex-col-reverse hmd:grid hmd:grid-cols-5"
       >
         <div
-          id="slider"
-          class="slide-in hmd:col-span-2 hmd:mr-20 md:mr-0 lg:col-start-1 lg:row-start-1"
+          class="hmd:col-span-2 hmd:mr-20 md:mr-0 lg:col-start-1 lg:row-start-1"
         >
           <img
-            class="fotoinview h-40 hmd:w-full md:h-56 lg:ml-20 lg:h-72 lg:w-auto"
+            class="h-40 hmd:w-full md:h-56 lg:ml-20 lg:h-72 lg:w-auto"
             src="img/produkt1.png"
             alt="TickrMeter produkt med grønt lys"
           />
           <img
-            class="fotoinview ml-20 h-40 hmd:w-full md:h-56 lg:ml-40 lg:h-72 lg:w-auto"
+            class="ml-20 h-40 hmd:w-full md:h-56 lg:ml-40 lg:h-72 lg:w-auto"
             src="img/produkt2.png"
             alt="TickrMeter produkt med rødt lys"
           />
@@ -821,5 +828,34 @@
       type="module"
       src="/themefunctions.js"
     ></script>
+
+    <script>
+      function topFunction() {
+        document.documentElement.scrollTop = 0; // Tilbage til toppen af dokumentet
+      }
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        var mybutton =
+          document.getElementById(
+            "mybutton"
+          );
+        if (
+          document.body.scrollTop >
+            30 ||
+          document.documentElement
+            .scrollTop > 30
+        ) {
+          mybutton.style.display =
+            "block";
+        } else {
+          mybutton.style.display =
+            "none";
+        }
+      }
+    </script>
   </body>
 </html>

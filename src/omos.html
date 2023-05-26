@@ -176,6 +176,15 @@
       </div>
     </header>
 
+    <!---------------------- TO TOP BUTTON ------------------------>
+
+    <button
+      onclick="topFunction()"
+      class="top-btn h-14 w-14 rounded-full border-4 border-green hover:bg-green"
+      id="mybutton"
+    >
+      <span class="top-icon"></span>
+    </button>
     <!---------------------- LANDING PAGE OM OS ------------------------>
     <section class="mb-10 mt-5">
       <div
@@ -619,5 +628,33 @@
       type="module"
       src="navigation.js"
     ></script>
+    <script>
+      function topFunction() {
+        document.documentElement.scrollTop = 0; // Tilbage til toppen af dokumentet
+      }
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        var mybutton =
+          document.getElementById(
+            "mybutton"
+          );
+        if (
+          document.body.scrollTop >
+            30 ||
+          document.documentElement
+            .scrollTop > 30
+        ) {
+          mybutton.style.display =
+            "block";
+        } else {
+          mybutton.style.display =
+            "none";
+        }
+      }
+    </script>
   </body>
 </html>
