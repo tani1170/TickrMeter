@@ -12,19 +12,19 @@ const images = {
     "img/product/single-product3.webp",
   ],
   twoPack: [
-    "/img/product/two-product1.webp",
-    "/img/product/two-product2.webp",
-    "/img/product/two-product3.webp",
+    "img/product/two-product1.webp",
+    "img/product/two-product2.webp",
+    "img/product/two-product3.webp",
   ],
   threePack: [
-    "/img/product/three-product1.webp",
-    "/img/product/three-product2.webp",
-    "/img/product/three-product3.webp",
+    "img/product/three-product1.webp",
+    "img/product/three-product2.webp",
+    "img/product/three-product3.webp",
   ],
   sixPack: [
-    "/img/product/single-product1.webp",
-    "/img/product/two-product1.webp",
-    "/img/product/three-product1.webp",
+    "img/product/single-product1.webp",
+    "img/product/two-product1.webp",
+    "img/product/three-product1.webp",
   ],
 };
 
