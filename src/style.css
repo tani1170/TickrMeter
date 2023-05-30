@@ -548,6 +548,7 @@ h1 {
     var(--dark, #dce2e4);
   padding-top: 10px;
   padding-bottom: 10px;
+  line-height: 110%;
 }
 
 h2 {
@@ -560,6 +561,7 @@ h2 {
     var(--dark, #dce2e4);
   padding-top: 10px;
   padding-bottom: 10px;
+  line-height: 110%;
 }
 
 .themefont {
@@ -1329,4 +1331,8 @@ a {
   100% {
     -webkit-transform: translateX(0%);
   }
+}
+
+.boxshadow {
+  box-shadow: 0px 3px 4px 0px #000;
 }
