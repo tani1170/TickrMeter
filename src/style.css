@@ -677,94 +677,100 @@ a {
 .img-toggle {
   background: var(
       --light,
-      url(img/logo_light_pri.svg)
+      url(/img/logo_light_pri.svg)
     )
     var(
       --dark,
-      url(img/logo_dark_pri.svg)
+      url(/img/logo_dark_pri.svg)
     )
     center / cover;
 }
 
 .logopri {
-  background: url(img/logo_dark_pri.svg)
+  background: url(/img/logo_dark_pri.svg)
     center / cover;
 }
 
 .iconthemegreen {
   background: var(
-      url(img/dark-mode-green.svg)
+      url(/img/dark-mode-green.svg)
     )
     var(
       --dark,
-      url(img/light-mode-green.svg)
+      url(/img/light-mode-green.svg)
     )
     center / cover;
 }
 .icontheme {
   background: var(
       --light,
-      url(img/dark_mode.svg)
+      url(/img/dark_mode.svg)
     )
-    var(--dark, url(img/light_mode.svg))
+    var(
+      --dark,
+      url(/img/light_mode.svg)
+    )
     center / cover;
 }
 .iconsetting {
   background: var(
       --light,
-      url(img/setting_light.svg)
+      url(/img/setting_light.svg)
     )
     var(
       --dark,
-      url(img/setting_dark.svg)
+      url(/img/setting_dark.svg)
     )
     center / cover;
 }
 .iconsettinggreen {
   background: var(
-      url(img/setting_green.svg)
+      url(/img/setting_green.svg)
     )
     var(
       --dark,
-      url(img/setting_green.svg)
+      url(/img/setting_green.svg)
     )
     center / cover;
 }
 .iconuser {
   background: var(
       --light,
-      url(img/user_light.svg)
+      url(/img/user_light.svg)
     )
-    var(--dark, url(img/user_dark.svg))
+    var(--dark, url(/img/user_dark.svg))
     center / cover;
 }
 .iconusergreen {
   background: var(
-      url(img/user_green.svg)
+      url(/img/user_green.svg)
     )
-    var(--dark, url(img/user_green.svg))
+    var(
+      --dark,
+      url(/img/user_green.svg)
+    )
     center / cover;
 }
 
 .iconbasket {
   background: var(
       --light,
-      url(img/basket_light.svg)
+      url(/img/basket_light.svg)
     )
     var(
       --dark,
-      url(img/basket_dark.svg)
+      url(/img/basket_dark.svg)
     )
     center / cover;
 }
 
 .iconbasketgreen {
   background: var(
-      url(img/basket_green.svg)
+      url(/img/basket_green.svg)
     )
     var(
       --dark,
-      url(img/basket_green.svg)
+      url(/img/basket_green.svg)
     )
     center / cover;
 }
@@ -778,18 +784,6 @@ a {
   fill: var(--light, #2b2e27)
     var(--dark, #dce2e4);
 }
-
-/* .top-down-btn {
-  background: url(img/top-down-btn.svg)
-    center / cover;
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-…  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-} */
 
 .top-btn {
   cursor: pointer;
@@ -906,33 +900,33 @@ a {
 /* --------------- STEPGUIDE---------------  */
 
 .step1 {
-  background: url(img/step_light.png)
+  background: url(/img/step_light.png)
     center / contain;
   background-repeat: no-repeat;
 }
 .step2 {
-  background: url(img/step2_light.png)
+  background: url(/img/step2_light.png)
     center / contain;
   background-repeat: no-repeat;
 }
 .step3 {
-  background: url(img/step3_light.png)
+  background: url(/img/step3_light.png)
     center / contain;
   background-repeat: no-repeat;
 }
 .step4 {
-  background: url(img/step4_light.png)
+  background: url(/img/step4_light.png)
     center / contain;
   background-repeat: no-repeat;
 }
 .step5 {
-  background: url(img/step5_light.png)
+  background: url(/img/step5_light.png)
     center / contain;
   background-repeat: no-repeat;
 }
 
 .step6 {
-  background: url(img/step6_light.png)
+  background: url(/img/step6_light.png)
     center / contain;
   background-repeat: no-repeat;
 }
@@ -997,11 +991,11 @@ a {
 .bannerlogo1 {
   background: var(
       --light,
-      url(img/manofmany_light.svg)
+      url(/img/manofmany_light.svg)
     )
     var(
       --dark,
-      url(img/manofmany_dark.svg)
+      url(/img/manofmany_dark.svg)
     )
     center / contain;
   background-repeat: no-repeat;
@@ -1009,11 +1003,11 @@ a {
 .bannerlogo2 {
   background: var(
       --light,
-      url(img/yankodesign_light.svg)
+      url(/img/yankodesign_light.svg)
     )
     var(
       --dark,
-      url(img/yankodesign_dark.svg)
+      url(/img/yankodesign_dark.svg)
     )
     center / cover;
 }
@@ -1024,7 +1018,7 @@ a {
     )
     var(
       --dark,
-      url(img/techtimes_dark.svg)
+      url(/img/techtimes_dark.svg)
     )
     center / cover;
 }
@@ -1032,11 +1026,11 @@ a {
 .bannerlogo4 {
   background: var(
       --light,
-      url(img/blessthisstuff_light.svg)
+      url(/img/blessthisstuff_light.svg)
     )
     var(
       --dark,
-      url(img/blessthisstuff_dark.svg)
+      url(/img/blessthisstuff_dark.svg)
     )
     center / cover;
 }
@@ -1044,9 +1038,9 @@ a {
 .newslettercheck {
   background: var(
       --light,
-      url(img/check_dark.svg)
+      url(/mg/check_dark.svg)
     )
-    var(--dark, url(img/check.svg))
+    var(--dark, url(/img/check.svg))
     center / contain;
   background-repeat: no-repeat;
 }
