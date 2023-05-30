@@ -6,10 +6,10 @@ import "./style.css";
 
 // Array med billednavne for hver knap
 var imgSingle1 = src(
-  "/img/product/single-product1.webp"
+  "img/product/single-product1.webp"
 );
 var imgSingle2 = src(
-  "/img/product/single-product2.webp"
+  "img/product/single-product2.webp"
 );
 
 const images = {
