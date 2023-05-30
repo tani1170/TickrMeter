@@ -111,21 +111,21 @@
   }
 
   .bannerlogo1 {
-    background: url(img/manofmany_dark.svg)
+    background: url(/img/manofmany_dark.svg)
       center / contain;
     background-repeat: no-repeat;
   }
   .bannerlogo2 {
-    background: url(img/yankodesign_dark.svg)
+    background: url(/img/yankodesign_dark.svg)
       center / cover;
   }
   .bannerlogo3 {
-    background: url(img/techtimes_dark.svg)
+    background: url(/img/techtimes_dark.svg)
       center / cover;
   }
 
   .bannerlogo4 {
-    background: url(img/blessthisstuff_dark.svg)
+    background: url(/img/blessthisstuff_dark.svg)
       center / cover;
   }
 
@@ -138,28 +138,28 @@
   /* --------------- STEPGUIDE---------------  */
 
   .step1 {
-    background: url(img/step_dark.png)
+    background: url(/img/step_dark.png)
       center / cover;
   }
   .step2 {
-    background: url(img/step2_dark.png)
+    background: url(/img/step2_dark.png)
       center / cover;
   }
   .step3 {
-    background: url(img/step3_dark.png)
+    background: url(/img/step3_dark.png)
       center / cover;
   }
   .step4 {
-    background: url(img/step4_dark.png)
+    background: url(/img/step4_dark.png)
       center / cover;
   }
   .step5 {
-    background: url(img/step5_dark.png)
+    background: url(/img/step5_dark.png)
       center / cover;
   }
 
   .step6 {
-    background: url(img/step6_dark.png)
+    background: url(/img/step6_dark.png)
       center / cover;
   }
 
@@ -257,39 +257,39 @@
 
   /* --------------- NAVIGATION---------------  */
   .img-toggle {
-    background: url(img/logo_light_pri.svg)
+    background: url(/img/logo_light_pri.svg)
       center / cover;
   }
   .icontheme {
-    background: url(img/light_mode.svg)
+    background: url(/img/light_mode.svg)
       center / cover;
   }
   .iconthemegreen {
-    background: url(img/dark-mode-green.svg)
+    background: url(/img/dark-mode-green.svg)
       center / cover;
   }
   .iconsetting {
-    background: url(img/setting_light.svg)
+    background: url(/img/setting_light.svg)
       center / cover;
   }
   .iconsettinggreen {
-    background: url(img/setting_green.svg);
+    background: url(/img/setting_green.svg);
   }
   .iconuser {
-    background: url(img/user_light.svg)
+    background: url(/img/user_light.svg)
       center / cover;
   }
 
   .iconusergreen {
-    background: url(img/user_green.svg);
+    background: url(/img/user_green.svg);
   }
   .iconbasket {
-    background: url(img/basket_light.svg)
+    background: url(/img/basket_light.svg)
       center / cover;
   }
 
   .iconbasketgreen {
-    background: url(img/basket_green.svg);
+    background: url(/img/basket_green.svg);
   }
 
   .burgersvg {
@@ -323,28 +323,28 @@
   /* --------------- STEPGUIDE---------------  */
 
   .step1 {
-    background: url(img/step_light.png)
+    background: url(/img/step_light.png)
       center / cover;
   }
   .step2 {
-    background: url(img/step2_light.png)
+    background: url(/img/step2_light.png)
       center / cover;
   }
   .step3 {
-    background: url(img/step3_light.png)
+    background: url(/img/step3_light.png)
       center / contain;
   }
   .step4 {
-    background: url(img/step4_light.png)
+    background: url(/img/step4_light.png)
       center / cover;
   }
   .step5 {
-    background: url(img/step5_light.png)
+    background: url(/img/step5_light.png)
       center / cover;
   }
 
   .step6 {
-    background: url(img/step6_light.png)
+    background: url(/img/step6_light.png)
       center / cover;
   }
   /* --------------- BANNER---------------  */
@@ -354,26 +354,26 @@
   }
 
   .bannerlogo1 {
-    background: url(img/manofmany_light.svg)
+    background: url(/img/manofmany_light.svg)
       center / contain;
     background-repeat: no-repeat;
   }
   .bannerlogo2 {
-    background: url(img/yankodesign_light.svg)
+    background: url(/img/yankodesign_light.svg)
       center / cover;
   }
   .bannerlogo3 {
-    background: url(img/techtimes_dark.svg)
+    background: url(/img/techtimes_dark.svg)
       center / cover;
   }
 
   .bannerlogo4 {
-    background: url(img/blessthisstuff_light.svg)
+    background: url(/img/blessthisstuff_light.svg)
       center / cover;
   }
 
   .newslettercheck {
-    background: url(img/check_dark.svg);
+    background: url(/img/check_dark.svg);
     background-repeat: no-repeat;
     margin-top: 5px;
   }
