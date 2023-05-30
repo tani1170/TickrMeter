@@ -14,9 +14,12 @@ var imgSingle2 = src(
 
 const images = {
   single: [
-    imgSingle1,
-    imgSingle2,
-    "img/product/single-product3.webp",
+    (src =
+      "img/product/single-product1.webp"),
+    (src =
+      "img/product/single-product2.webp"),
+    (src =
+      "img/product/single-product3.webp"),
   ],
   twoPack: [
     "/img/product/two-product1.webp",
