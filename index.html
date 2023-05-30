@@ -5,7 +5,12 @@
     <link
       rel="icon"
       type="image/svg+xml"
-      href="/vite.svg"
+      href="./img/logo_light_sek.svg"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.typekit.net/qqu5yej.css"
     />
     <link
       rel="preconnect"
@@ -17,140 +22,856 @@
       crossorigin
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600&display=swap"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.typekit.net/ymh5qtz.css"
     />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
 
-    <title>Vite App</title>
-    <script type="module" crossorigin src="./assets/main-e0b815ee.js"></script>
-    <link rel="stylesheet" href="./assets/index-5b4215e3.css">
+    <title>TickrMeter</title>
+    <script type="module" crossorigin src="./assets/main-5508fc9e.js"></script>
+    <link rel="stylesheet" href="./assets/index-222033dd.css">
   </head>
-  <body class="bg-graydark">
-    <div
-      class="grid grid-cols-5 grid-rows-5"
+  <body>
+    <!---------------------- LANDINGPAGE ------------------------>
+    <section
+      class="grid h-[40rem] grid-cols-8 grid-rows-6 hmd:h-[45rem] hmd:grid-cols-9 md:grid-cols-9 md:grid-rows-4 lg:grid-rows-5"
     >
-      <div
-        class="border-3 col-span-2 col-start-2 row-span-3 row-start-2 space-y-3"
-      >
-        <h1
-          class="font-heading text-xl text-beige"
+      <header class="w-screen sm:h-56">
+        <div
+          class="mx-auto flex items-center justify-between py-4"
         >
-          Heading 1, Futura regular,
-          39px/2.4rem
-        </h1>
-        <h2
-          class="font-heading text-lg text-beige"
-        >
-          Heading 2, Futura regular,
-          31px/1.9rem
-        </h2>
-        <h3
-          class="font-heading text-md text-beige"
-        >
-          heading 3, Futura regular,
-          25px/1.5rem
-        </h3>
-        <p
-          class="font-body text-base text-beige"
-        >
-          Body, Raleway Regular,
-          16px/1rem
-        </p>
-      </div>
-      <div
-        class="col-start-4 col-end-6 row-span-2 row-start-2 border-y-4 border-l-4 border-green"
-      ></div>
-      <div
-        class="col-span-2 col-start-5 row-span-4 row-start-3 border-l-4 border-t-4 border-green"
-      ></div>
-    </div>
+          <div class="ml-5 md:ml-10">
+            <a href="/index.html">
+              <div
+                class="img-toggle h-16 w-28"
+              ></div>
+            </a>
+          </div>
 
-    <div
-      class="grid grid-cols-5 grid-rows-5 bg-beige"
-    >
-      <div
-        class="col-span-2 col-start-4 row-span-3 row-start-2 space-y-3 p-3"
-      >
-        <h1
-          class="font-heading text-xl text-graydark"
-        >
-          Heading 1, Futura regular,
-          39px/2.4rem
-        </h1>
-        <h2
-          class="font-heading text-lg text-graydark"
-        >
-          Heading 2, Futura regular,
-          31px/1.9rem
-        </h2>
-        <h3
-          class="font-heading text-md text-graydark"
-        >
-          heading 3, Futura regular,
-          25px/1.5rem
-        </h3>
-        <p
-          class="font-body text-base text-graydark"
-        >
-          Body, Raleway Regular,
-          16px/1rem
-        </p>
-      </div>
-      <div
-        class="col-start-1 col-end-4 row-span-2 row-start-2 border-y-4 border-r-4 border-green"
-      ></div>
-      <div
-        class="col-span-1 col-start-2 row-span-4 row-start-3 border-x-4 border-t-4 border-green"
-      ></div>
-    </div>
+          <!-- burger svg -->
+          <button
+            id="togglenav"
+            class="z-30 mr-5 md:hidden"
+          >
+            <svg
+              class="burgersvg h-7 w-7"
+              aria-hidden="true"
+              viewBox="0 0 100 80"
+              width="40"
+              height="40"
+            >
+              <rect
+                width="90"
+                height="18"
+              ></rect>
+              <rect
+                y="30"
+                x="40"
+                width="70"
+                height="18"
+              ></rect>
+              <rect
+                y="60"
+                x="10"
+                width="80"
+                height="18"
+              ></rect>
+            </svg>
+          </button>
 
-    <div
-      class="grid grid-cols-5 grid-rows-5 bg-bluedark"
-    >
+          <!-- NAVIGATIONS -->
+          <nav
+            id="nav"
+            class="navbg fixed bottom-0 top-0 -right-full z-20 flex w-screen flex-col transition-all md:static md:w-auto md:flex-row md:pr-12 lg:self-center"
+          >
+            <div
+              class="flex flex-col gap-4 pt-56 md:grid md:grid-cols-7 md:items-center md:pt-0 lg:grid lg:grid-cols-9 lg:flex-row"
+            >
+              <ul
+                class="ml-9 md:col-span-5 md:col-start-1 md:flex md:gap-10 lg:col-start-2"
+              >
+                <li>
+                  <a
+                    class="navfont"
+                    href="/bestil.html"
+                    >Bestil</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="navfont"
+                    href="/support.html"
+                    >Support</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="navfont"
+                    href="/guide.html"
+                    >Guide</a
+                  >
+                </li>
+                <div class="dropdown">
+                  <button
+                    class="navfont flex items-center"
+                    href="/omos.html"
+                  >
+                    Om Os
+                    <svg
+                      class="ml-1 h-5 w-5"
+                      aria-hidden="true"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+
+                  <!-- DROPDOWN MENU -->
+                  <div
+                    class="dropdown-content"
+                  >
+                    <a
+                      class="navfont"
+                      href="/omos.html"
+                      >Hvem er vi?</a
+                    >
+                    <a
+                      class="navfont"
+                      href="#"
+                      >Nyheder</a
+                    >
+                    <a
+                      class="navfont"
+                      href="#"
+                      >Til
+                      virksomheder</a
+                    >
+                  </div>
+                </div>
+              </ul>
+              <!-- NAVIGATIONS ICONS -->
+              <ul
+                class="ml-3 flex place-content-end gap-5 md:col-start-7 lg:col-start-9"
+              >
+                <button
+                  id="toggle-theme"
+                  class="icontheme h-6 w-6"
+                ></button>
+                <a
+                  href="/login.html"
+                  class="iconuser h-6 w-6"
+                ></a>
+                <a
+                  href="#"
+                  class="iconbasket h-6 w-6"
+                ></a>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
       <div
-        class="col-span-2 col-start-2 row-span-3 row-start-2 space-y-4 p-4"
+        class="col-start-1 col-end-9 row-span-3 row-start-3 ml-5 hmd:col-span-5 hmd:col-start-2 hmd:row-span-4 hmd:row-start-3 md:col-start-2 md:row-span-2 md:row-start-3 md:place-content-center lg:col-span-3 lg:col-start-2 lg:row-start-3"
       >
-        <h1
-          class="font-heading text-xl text-graylight"
-        >
-          Heading 1, Futura regular,
-          39px/2.4rem
+        <h1 class="hmd:pr-44 lg:pr-0">
+          Få mere tid til det vigtige
+          med TickrMeter
         </h1>
-        <h2
-          class="font-heading text-lg text-graylight"
+
+        <a
+          href="/bestil.html"
+          class="btn btn-pri mt-6 border-4 py-3 px-12"
+          >Få din her</a
         >
-          Heading 2, Futura regular,
-          31px/1.9rem
-        </h2>
-        <h3
-          class="font-heading text-md text-graylight"
-        >
-          heading 3, Futura regular,
-          25px/1.5rem
-        </h3>
-        <p
-          class="font-body text-base text-graylight"
-        >
-          Body, Raleway Regular,
-          16px/1rem
-        </p>
+      </div>
+
+      <div
+        class="col-span-9 col-start-2 row-start-5 mr-10 mt-10 hmd:col-start-5 hmd:row-start-4 hmd:mt-0 hmd:grid hmd:justify-items-end md:col-span-4 md:col-start-6 md:row-span-full md:row-start-3 md:mr-10 md:mr-0 lg:col-span-5 lg:col-start-5 lg:ml-20 lg:justify-start"
+      >
+        <img
+          class="h-auto w-full"
+          src="./img/tickrmeter front.png"
+          alt="billede af tickrmeter produkt med grønt lys"
+        />
       </div>
       <div
-        class="col-start-4 col-end-6 row-span-2 row-start-2 border-y-4 border-l-4 border-green"
+        class="over -z-10 col-span-4 col-start-7 row-start-1 h-[40rem] bg-green hmd:h-[45rem]"
+      ></div>
+      <!-- DOWN TO SECTION BUTTON -->
+      <button
+        class="down-btn inset-x-1/2 h-14 w-14 justify-center rounded-full border-4 border-green hover:bg-green sm:hidden lg:bottom-32 lg:block"
+        onclick="scrollToSection('section2')"
+      >
+        <span class="down-icon"></span>
+      </button>
+    </section>
+
+    <!---------------------- BANNER SPONSER ------------------------>
+    <section
+      class="banner z-10 grid h-24 overflow-hidden lg:h-32"
+    >
+      <div class="hidden lg:block">
+        <div
+          class="flex place-items-center content-center justify-center space-x-10"
+        >
+          <div
+            class="bannerlogo1 h-32 w-52"
+          ></div>
+
+          <div
+            class="bannerlogo2 h-16 w-44"
+          ></div>
+
+          <div
+            class="bannerlogo3 h-16 w-28"
+          ></div>
+
+          <div
+            class="bannerlogo4 h-8 w-52"
+          ></div>
+
+          <img
+            class="bannerlogo5 h-8 w-auto"
+            src="./img/indiegogo-logo.webp"
+            alt="logo af indigogo"
+          />
+          <img
+            class="bannerlogo6 h-24 w-auto"
+            src="./img/LogoHODLers.webp"
+            alt="logo af hoodler"
+          />
+        </div>
+      </div>
+
+      <div class="lg:hidden">
+        <div
+          class="flex place-items-center content-center overflow-x-auto"
+        >
+          <div
+            class="animate-marquee flex place-items-center justify-items-center space-x-10"
+          >
+            <div
+              class="bannerlogo1 w-96"
+            ></div>
+
+            <div
+              class="bannerlogo2 object- h-20 w-72"
+            ></div>
+
+            <div
+              class="bannerlogo3 h-20 w-48"
+            ></div>
+
+            <div
+              class="bannerlogo4 h-10 w-96"
+            ></div>
+
+            <img
+              class="bannerlogo5 h-8 w-auto"
+              src="./img/indiegogo-logo.webp"
+              alt=" logo af indigogo"
+            />
+            <img
+              class="bannerlogo6 h-24 w-auto"
+              src="./img/LogoHODLers.webp"
+              alt="logo af Hoodlers"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------------- TO TOP BUTTON ------------------------>
+
+    <button
+      onclick="topFunction()"
+      class="top-btn h-14 w-14 rounded-full border-4 border-green hover:bg-green"
+      id="mybutton"
+    >
+      <span class="top-icon"></span>
+    </button>
+    <!---------------------- FUNCTIONS ------------------------>
+
+    <section
+      id="section2"
+      class="relative px-5 py-14"
+    >
+      <!-- TREDJE ELEMENT -->
+
+      <div
+        class="absolute right-0 top-0 -z-10 h-10 w-40 border-b-4 border-l-4 border-green lg:top-32 lg:h-2/3 lg:w-3/5 lg:border-t-4"
       ></div>
       <div
-        class="col-span-2 col-start-5 row-span-4 row-start-3 border-l-4 border-t-4 border-green"
+        class="absolute right-0 top-0 -z-10 h-32 w-10 border-b-4 border-l-4 border-green lg:hidden"
       ></div>
-    </div>
+
+      <div
+        class="absolute left-0 bottom-0 -z-10 h-14 w-40 border-t-4 border-r-4 border-green hmd:h-96 lg:hidden"
+      ></div>
+      <div
+        class="absolute left-0 bottom-0 -z-10 w-72 border-t-4 border-r-4 border-green sm:hidden hmd:block hmd:h-32 lg:h-56 lg:w-3/6"
+      ></div>
+      <div
+        class="absolute right-0 bottom-0 -z-10 h-32 w-72 border-t-4 border-l-4 border-green hmd:hidden"
+      ></div>
+
+      <!-- PRODUKTER og FUNKTIONER -->
+      <div
+        class="hmd: flex flex-col-reverse hmd:grid hmd:grid-cols-5"
+      >
+        <div
+          class="fotofromtop hmd:col-span-2 hmd:mr-20 md:mr-0 lg:col-start-1 lg:row-start-1"
+        >
+          <img
+            class="h-40 hmd:w-full md:h-56 lg:ml-20 lg:h-72 lg:w-auto"
+            src="img/produkt1.png"
+            alt="TickrMeter produkt med grønt lys"
+          />
+          <img
+            class="ml-20 h-40 hmd:w-full md:h-56 lg:ml-40 lg:h-72 lg:w-auto"
+            src="img/produkt2.png"
+            alt="TickrMeter produkt med rødt lys"
+          />
+        </div>
+
+        <!-- FUNKTIONER -->
+        <div
+          class="col-span-full col-start-3 row-start-1 md:pl-40 lg:grid lg:place-content-center"
+        >
+          <h2>Nogle af funktionerne</h2>
+          <div
+            class="grid gap-1.5 hmd:flex hmd:flex-wrap"
+          >
+            <!-- Første fordel  -->
+            <div
+              class="hmd:w-56 md:w-60 lg:w-80"
+            >
+              <div
+                class="flex place-items-start gap-2"
+              >
+                <h3>01</h3>
+                <div class="pt-2">
+                  <h4>
+                    Forbind via WiFi
+                  </h4>
+                  <p>
+                    TickrMeter skal kun
+                    sættes op én gang.
+                    Derfra vil
+                    TickrMeter altid
+                    opdatere automatisk
+                    direkte fra dit
+                    WiFi.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Anden fordel  -->
+            <div
+              class="hmd:w-56 lg:w-80"
+            >
+              <div
+                class="flex place-items-start gap-2"
+              >
+                <h3>02</h3>
+                <div class="pt-2">
+                  <h4>
+                    Statuslys der kan
+                    tilpasses
+                  </h4>
+                  <p>
+                    Indstil
+                    statusdisplayet til
+                    at vise candle stick
+                    farve, RSI eller som
+                    en advarsel. Flere
+                    funktioner er på
+                    vej!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trejde fordel  -->
+            <div
+              class="hmd:w-56 lg:w-80"
+            >
+              <div
+                class="flex place-items-start gap-2"
+              >
+                <h3>03</h3>
+                <div class="pt-2">
+                  <h4>
+                    Højteknologisk E-Ink
+                    skærm
+                  </h4>
+                  <p>
+                    TickrMeter bruger en
+                    E-Ink skærm, som
+                    ikke udsender lys og
+                    ikke forstyrrer dig.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fjerde fordel  -->
+            <div
+              class="hmd:w-56 lg:w-80"
+            >
+              <div
+                class="flex place-items-start gap-2"
+              >
+                <h3>04</h3>
+                <div class="pt-2">
+                  <h4>
+                    Minimalistisk og
+                    elegant
+                  </h4>
+                  <p>
+                    TickrMeter har et
+                    elegant og
+                    minimalistisk
+                    design, så den let
+                    kan indgå i som en
+                    del af din
+                    indretning
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------- VIDEO ------------------------>
+
+    <section
+      class="relative hmd:flex lg:relative"
+    >
+      <div
+        class="themebg px-5 pb-28 pt-5 hmd:flex hmd:flex-col lg:py-40 lg:pl-40 lg:pr-72"
+      >
+        <h2 class="themefont">
+          Bring dine inversteringer til
+          live
+        </h2>
+        <p class="themefont">
+          TickrMeter er designet til at
+          være den essentielle gadget
+          for hobbyinvestorer,
+          professionelle investorer og
+          alt derimellem. Vi lykkes
+        </p>
+      </div>
+
+      <div
+        class="absolute bottom-2 flex w-full justify-center hmd:static hmd:bottom-0 hmd:place-items-center lg:relative lg:right-48"
+      >
+        <iframe
+          class="hmd:h-56 lg:h-full lg:w-full lg:py-20"
+          src="https://www.youtube.com/embed/RlNv1kYmQas"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!---------------------- TESTIMONIALS ------------------------>
+
+    <section
+      class="py-10 px-5 md:py-32"
+    >
+      <h2 class="mb-2 lg:ml-28">
+        Testimonial
+      </h2>
+      <div
+        class="testimonial-section lg:flex lg:justify-center"
+      >
+        <div class="flex gap-5">
+          <!-- Testimonial Box 1 -->
+          <div
+            class="testimonial-box mb-4 p-4"
+          >
+            <div
+              class="testimonial-content flex h-48 flex-col justify-between"
+            >
+              <div>
+                <h4 class="mb-2">
+                  Elsker produktet
+                </h4>
+                <p class="mb-4">
+                  TickrMeter gør det
+                  meget nemmere at holde
+                  sig ajour med, hvordan
+                  dine investeringer
+                  klarer sig
+                </p>
+              </div>
+              <div>
+                <hr
+                  class="mb-4 border-t-2 border-green"
+                />
+                <div
+                  class="flex items-center gap-5"
+                >
+                  <div
+                    class="md:flex md:self-start"
+                  >
+                    <img
+                      class="h-8"
+                      src="./img/Users Group Rounded.svg"
+                      alt="ikon af bruger til testimonial"
+                    />
+                  </div>
+                  <p class="pbold">
+                    manofmany
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Box 2 -->
+          <div
+            class="testimonial-box mb-4 p-4"
+          >
+            <div
+              class="testimonial-content flex h-48 flex-col justify-between"
+            >
+              <div>
+                <h4 class="mb-2">
+                  Perfekt til
+                  hjemmekontoret!
+                </h4>
+                <p class="mb-4">
+                  En fuldt konfigurerbar
+                  Desktop Aktie Ticker"
+                </p>
+              </div>
+              <div>
+                <hr
+                  class="mb-4 border-t-2 border-green"
+                />
+                <div
+                  class="flex items-center gap-5"
+                >
+                  <div
+                    class="md:flex md:self-start"
+                  >
+                    <img
+                      class="h-8"
+                      src="./img/Users Group Rounded.svg"
+                      alt="ikon af bruger til testimonial"
+                    />
+                  </div>
+                  <p class="pbold">
+                    Eleni Dusan
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Box 3 -->
+          <div
+            class="testimonial-box mb-4 p-4"
+          >
+            <div
+              class="testimonial-content flex h-48 flex-col justify-between"
+            >
+              <div>
+                <h4 class="mb-2">
+                  TechTimes
+                </h4>
+                <p class="mb-4">
+                  The perfect stock
+                  trading buddy
+                </p>
+              </div>
+              <div>
+                <hr
+                  class="mb-4 border-t-2 border-green"
+                />
+                <div
+                  class="flex items-center gap-5"
+                >
+                  <div
+                    class="md:flex md:self-start"
+                  >
+                    <img
+                      class="h-8"
+                      src="./img/Users Group Rounded.svg"
+                      alt="ikon af bruger til testimonial"
+                    />
+                  </div>
+                  <p class="pbold">
+                    Mark B
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Box 4 -->
+          <div
+            class="testimonial-box mb-4 p-4"
+          >
+            <div
+              class="testimonial-content flex h-48 flex-col justify-between"
+            >
+              <div>
+                <h4 class="mb-2">
+                  John Doe
+                </h4>
+                <p class="mb-4">
+                  Lorem ipsum dolor sit
+                  amet, consectetur
+                  adipiscing elit.
+                </p>
+              </div>
+              <div>
+                <hr
+                  class="mb-4 border-t-2 border-green"
+                />
+                <div
+                  class="flex items-center gap-5"
+                >
+                  <div
+                    class="md:flex md:self-start"
+                  >
+                    <img
+                      class="h-8"
+                      src="./img/Users Group Rounded.svg"
+                      alt="ikon af bruger til testimonial"
+                    />
+                  </div>
+                  <p class="pbold">
+                    John Sørensen
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------- HUB ------------------------>
+
+    <section class="">
+      <div
+        class="stagger-slide-in relative"
+      >
+        <div
+          class="slide-element absolute -bottom-10 -z-10 h-72 w-3/5 border-r-4 border-b-4 border-t-4 border-green hmd:top-24"
+        ></div>
+        <div class="slide-element px-5">
+          <div
+            class="boxshadow themebg mx-5 grid place-items-center justify-around justify-items-center gap-5 p-5 pb-10 hmd:gap-3 hmd:py-10 md:mx-56 md:flex md:h-72"
+          >
+            <div
+              class="md:flex md:self-start"
+            >
+              <img
+                class="h-12"
+                src="./img/Users Group Rounded.svg"
+                alt="ikon af en bruger"
+              />
+            </div>
+
+            <div class="pb-5">
+              <h2 class="themefont">
+                Besøg TickrMeter Hub
+              </h2>
+              <p
+                class="themefont md:w-72"
+              >
+                Del
+                TickrMeter-brugstilfælde
+                eller giv feedback i
+                TickrMeter-fællesskabet
+              </p>
+            </div>
+
+            <a
+              href="https://www.facebook.com/groups/tickrmeter"
+              class="themesubbtn btn themebtn max-w-fit whitespace-nowrap border-4 px-14 py-4"
+            >
+              Gå til Hub</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------- FOOTER ------------------------>
+    <footer
+      class="mx-14 mt-20 mb-10 grid gap-10 hmd:mt-52"
+    >
+      <div
+        class="grid gap-8 hmd:flex hmd:justify-around lg:mx-20"
+      >
+        <!-- Input -->
+        <div
+          class="grid gap-2 hmd:gap-1"
+        >
+          <div>
+            <h3>Tilmeld nyhedsbrev</h3>
+            <p class="hmd:w-72">
+              Gå ikke glip af kampagner,
+              nyheder eller opdateringer
+              om nye funktioner!
+            </p>
+          </div>
+
+          <div>
+            <form action="submit">
+              <label for="email"
+                >Email:</label
+              >
+              <div
+                class="inputfooter flex w-fit content-center border-2"
+              >
+                <input
+                  type="email"
+                  placeholder="min@email.com"
+                  id="email"
+                  class="inputfooter border-none"
+                />
+                <div
+                  class="newslettercheck mr-2 flex h-auto w-10"
+                ></div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Kontakt -->
+        <div
+          class="grid gap-2 hmd:flex hmd:flex-col hmd:gap-1"
+        >
+          <h4>Kontakt os!</h4>
+
+          <a
+            href="mailto:hello@tickrmeter.com"
+            >hello@tickrmeter.com</a
+          >
+          <p>
+            TickrMeter ApS CVR
+            DK43371584
+          </p>
+          <p>
+            Weidekampsgade 3, 2 tv,
+            DK2300 København
+          </p>
+        </div>
+
+        <!-- links -->
+        <div class="grid gap-2">
+          <h4>Hurtig Menu</h4>
+          <div
+            class="grid gap-1 hmd:gap-2"
+          >
+            <a
+              href="Nyheder"
+              class="link"
+              >Nyheder</a
+            >
+            <a
+              href="Nyheder"
+              class="link"
+              >Setup Guide</a
+            >
+            <a
+              href="Nyheder"
+              class="link"
+              >Suport</a
+            >
+            <a
+              href="Nyheder"
+              class="link"
+              >Om os</a
+            >
+            <a
+              href="Nyheder"
+              class="link"
+              >Til virksomheder</a
+            >
+            <a
+              href="Nyheder"
+              class="link"
+              >Servicevilkår</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center">
+        <div
+          class="img-toggle h-16 w-28 hmd:h-24 hmd:w-44"
+        ></div>
+      </div>
+    </footer>
 
     
+
+    
+    
+
+    <script>
+      function topFunction() {
+        document.documentElement.scrollTop = 0; // Tilbage til toppen af dokumentet
+      }
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        var mybutton =
+          document.getElementById(
+            "mybutton"
+          );
+        if (
+          document.body.scrollTop >
+            30 ||
+          document.documentElement
+            .scrollTop > 30
+        ) {
+          mybutton.style.display =
+            "block";
+        } else {
+          mybutton.style.display =
+            "none";
+        }
+      }
+
+      // scroll ned section
+      function scrollToSection(
+        sectionId
+      ) {
+        const section =
+          document.getElementById(
+            sectionId
+          );
+        section.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+    </script>
   </body>
 </html>
