@@ -5,21 +5,11 @@ import "./style.css";
 //---------------------  Produkt pakke funktion  --------------------- //
 
 // Array med billednavne for hver knap
-var imgSingle1 = src(
-  "img/product/single-product1.webp"
-);
-var imgSingle2 = src(
-  "img/product/single-product2.webp"
-);
-
 const images = {
   single: [
-    (src =
-      "img/product/single-product1.webp"),
-    (src =
-      "img/product/single-product2.webp"),
-    (src =
-      "img/product/single-product3.webp"),
+    "img/product/single-product1.webp",
+    "img/product/single-product2.webp",
+    "img/product/single-product3.webp",
   ],
   twoPack: [
     "/img/product/two-product1.webp",
