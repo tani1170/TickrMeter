@@ -4,23 +4,91 @@ import {
   animate,
   inView,
   scroll,
+  stagger,
 } from "motion";
 
-import Alpine from "alpinejs";
-window.Alpine = Alpine;
-Alpine.start();
+// import Alpine from "alpinejs";
+// window.Alpine = Alpine;
+// Alpine.start();
 
-scroll(
-  animate(".progress-bar", {
-    scaleX: [0, 1],
-  })
+inView(
+  ".stagger-slide-in",
+  ({ target }) => {
+    animate(
+      target.querySelectorAll(
+        ".slide-element"
+      ),
+      { x: [-2000, 0] },
+      {
+        duration: 1,
+        delay: stagger(1, {
+          start: 0.09,
+        }),
+      }
+    );
+  }
 );
+inView(".fotofromtop", () => {
+  animate(
+    ".fotofromtop",
+    { y: [-100, 0] },
+    { duration: 2 }
+  );
+});
 
 inView(".fotofromright", () => {
   animate(
     ".fotofromright",
     { x: [2000, 0] },
     { duration: 1 }
+  );
+});
+
+inView(".fotofromright2", () => {
+  animate(
+    ".fotofromright2",
+    { x: [2000, 0] },
+    { duration: 1 }
+  );
+});
+
+inView(".fotofromright3", () => {
+  animate(
+    ".fotofromright3",
+    { x: [2000, 0] },
+    { duration: 1 }
+  );
+});
+
+inView(".fotofromright4", () => {
+  animate(
+    ".fotofromright4",
+    { x: [2000, 0] },
+    { duration: 1 }
+  );
+});
+
+inView(".fotofromright5", () => {
+  animate(
+    ".stefotofromright5p4",
+    { x: [2000, 0] },
+    { duration: 1 }
+  );
+});
+
+inView(".fotofromright6", () => {
+  animate(
+    ".fotofromright6",
+    { x: [2000, 0] },
+    { duration: 1 }
+  );
+});
+
+inView(".guideside", () => {
+  scroll(
+    animate(".progress-bar", {
+      scaleX: [0, 1],
+    })
   );
 });
 

@@ -906,57 +906,33 @@ a {
 /* --------------- STEPGUIDE---------------  */
 
 .step1 {
-  background: var(
-      --light,
-      url(img/step_light.png)
-    )
-    var(--dark, url(img/step_dark.png))
+  background: url(img/step_light.png)
     center / contain;
   background-repeat: no-repeat;
 }
 .step2 {
-  background: var(
-      --light,
-      url(img/step2_light.png)
-    )
-    var(--dark, url(img/step2_dark.png))
+  background: url(img/step2_light.png)
     center / contain;
   background-repeat: no-repeat;
 }
 .step3 {
-  background: var(
-      --light,
-      url(img/step3_light.png)
-    )
-    var(--dark, url(img/step3_dark.png))
+  background: url(img/step3_light.png)
     center / contain;
   background-repeat: no-repeat;
 }
 .step4 {
-  background: var(
-      --light,
-      url(img/step4_light.png)
-    )
-    var(--dark, url(img/step4_dark.png))
+  background: url(img/step4_light.png)
     center / contain;
   background-repeat: no-repeat;
 }
 .step5 {
-  background: var(
-      --light,
-      url(img/step5_light.png)
-    )
-    var(--dark, url(img/step5_dark.png))
+  background: url(img/step5_light.png)
     center / contain;
   background-repeat: no-repeat;
 }
 
 .step6 {
-  background: var(
-      --light,
-      url(img/step6_light.png)
-    )
-    var(--dark, url(img/step6_dark.png))
+  background: url(img/step6_light.png)
     center / contain;
   background-repeat: no-repeat;
 }
