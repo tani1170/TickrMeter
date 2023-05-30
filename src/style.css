@@ -609,6 +609,7 @@ p {
   );
   color: var(--light, #2b2e27)
     var(--dark, #dce2e4);
+  line-height: 130%;
 }
 
 .pbold {
