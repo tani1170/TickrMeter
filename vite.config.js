@@ -42,6 +42,10 @@ export default defineConfig({
           __dirname,
           "src/nylogin.html"
         ),
+        sitemap: resolve(
+          __dirname,
+          "src/sitemap.html"
+        ),
 
         // about: resolve(__dirname, "src/about.html"),
       },
