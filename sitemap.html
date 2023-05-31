@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./img/logo_light_sek.svg"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.typekit.net/qqu5yej.css"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>TickrMeter</title>
+    <script type="module" crossorigin src="./assets/main-a67fbc39.js"></script>
+    <script type="module" crossorigin src="./assets/themefunctions-ec7b7b4d.js"></script>
+    <script type="module" crossorigin src="./assets/navigation-7f1d4c0d.js"></script>
+    <link rel="stylesheet" href="./assets/main-c178981f.css">
+  </head>
+  <body>
+    <!---------------------- HEADER ------------------------>
+
+    <header class="">
+      <div
+        class="mx-auto flex items-center justify-between py-4"
+      >
+        <div class="ml-5 md:ml-10">
+          <a href="index.html">
+            <div
+              class="img-toggle h-16 w-28"
+            ></div
+          ></a>
+        </div>
+
+        <!-- burger svg -->
+        <button
+          id="togglenav"
+          class="z-30 mr-5 md:hidden"
+        >
+          <svg
+            class="burgersvg h-7 w-7"
+            aria-hidden="true"
+            viewBox="0 0 100 80"
+            width="40"
+            height="40"
+          >
+            <rect
+              width="90"
+              height="18"
+            ></rect>
+            <rect
+              y="30"
+              x="40"
+              width="70"
+              height="18"
+            ></rect>
+            <rect
+              y="60"
+              x="10"
+              width="80"
+              height="18"
+            ></rect>
+          </svg>
+        </button>
+
+        <!-- NAVIGATIONS -->
+        <nav
+          id="nav"
+          class="navbg fixed top-0 bottom-0 -right-full z-20 flex w-screen flex-col pt-56 transition-all md:static md:w-auto md:flex-row md:pt-0 md:pr-12 lg:self-center"
+        >
+          <div
+            class="flex flex-col gap-4 md:grid md:grid-cols-7 md:items-center lg:grid lg:grid-cols-9 lg:flex-row"
+          >
+            <ul
+              class="ml-9 md:col-span-5 md:col-start-1 md:flex md:gap-10 lg:col-start-2"
+            >
+              <li>
+                <a
+                  class="navfont"
+                  href="bestil.html"
+                  >Bestil</a
+                >
+              </li>
+              <li>
+                <a
+                  class="navfont"
+                  href="support.html"
+                  >Support</a
+                >
+              </li>
+              <li>
+                <a
+                  class="navfont"
+                  href="guide.html"
+                  >Guide</a
+                >
+              </li>
+              <div class="dropdown">
+                <button
+                  class="navfont flex items-center"
+                  href="omos.html"
+                >
+                  Om Os
+
+                  <svg
+                    class="ml-1 h-5 w-5"
+                    aria-hidden="true"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+
+                <!-- DROPDOWN MENU -->
+                <div
+                  class="dropdown-content"
+                >
+                  <a
+                    class="navfont"
+                    href="omos.html"
+                    >Hvem er vi?</a
+                  >
+
+                  <a
+                    class="navfont"
+                    href="#"
+                    >Nyheder</a
+                  >
+
+                  <a
+                    class="navfont"
+                    href="#"
+                    >Til virksomheder</a
+                  >
+                </div>
+              </div>
+            </ul>
+            <ul
+              class="ml-3 flex place-content-end gap-5 md:col-start-7 lg:col-start-9"
+            >
+              <button
+                id="toggle-theme"
+                class="icontheme h-6 w-6"
+              ></button>
+              <a
+                href="login.html"
+                class="iconuser h-6 w-6"
+              ></a>
+              <li
+                class="iconbasket h-6 w-6"
+              ></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section
+      class="ml-5 mt-5 lg:ml-20 lg:mt-20"
+    >
+      <h2 class="mb-5">Sitemap</h2>
+      <div>
+        <a
+          href="index.html"
+          class="link"
+          >Forside</a
+        >
+        <div class="ml-10 grid">
+          <a
+            href="bestil.html"
+            class="link"
+            >Bestil</a
+          >
+          <a
+            href="support.html"
+            class="link"
+            >Support</a
+          >
+          <a
+            href="guide.html"
+            class="link"
+            >Guide</a
+          >
+          <a href="#">Om os</a>
+          <div class="ml-10 grid">
+            <a
+              href="omos.html"
+              class="link"
+              >Hvem er vi?</a
+            >
+            <a href="#">Nyheder</a>
+            <a href="#"
+              >Til virksomheder</a
+            >
+          </div>
+          <a
+            href="login.html"
+            class="link"
+            >Login</a
+          >
+          <a
+            href="nylogin.html"
+            class="link"
+            >Ny bruger login</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!---------------------- FOOTER ------------------------>
+    <footer
+      class="mx-14 mt-20 mb-10 grid gap-10 hmd:mt-52"
+    >
+      <div
+        class="grid gap-8 hmd:flex hmd:justify-around lg:mx-20"
+      >
+        <!-- Input -->
+        <div
+          class="grid gap-2 hmd:gap-1"
+        >
+          <div>
+            <h3>Tilmeld nyhedsbrev</h3>
+            <p class="hmd:w-72">
+              Gå ikke glip af kampagner,
+              nyheder eller opdateringer
+              om nye funktioner!
+            </p>
+          </div>
+
+          <div>
+            <form action="submit">
+              <label for="email"
+                >Email:</label
+              >
+              <div
+                class="inputfooter flex w-fit content-center border-2"
+              >
+                <input
+                  type="email"
+                  placeholder="min@email.com"
+                  id="email"
+                  class="inputfooter border-none"
+                />
+                <div
+                  class="newslettercheck mr-2 flex h-auto w-10"
+                ></div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Kontakt -->
+        <div
+          class="grid gap-2 hmd:flex hmd:flex-col hmd:gap-1"
+        >
+          <h4>Kontakt os!</h4>
+
+          <a
+            href="mailto:hello@tickrmeter.com"
+            >hello@tickrmeter.com</a
+          >
+          <p>
+            TickrMeter ApS CVR
+            DK43371584
+          </p>
+          <p>
+            Weidekampsgade 3, 2 tv,
+            DK2300 København
+          </p>
+        </div>
+
+        <!-- links -->
+        <div class="grid gap-2">
+          <h4>Hurtig Menu</h4>
+          <div
+            class="grid gap-1 hmd:gap-2"
+          >
+            <a
+              href="Nyheder"
+              class="link"
+              >Nyheder</a
+            >
+            <a
+              href="Nyheder"
+              class="link"
+              >Setup Guide</a
+            >
+            <a
+              href="Nyheder"
+              class="link"
+              >Suport</a
+            >
+            <a
+              href="Nyheder"
+              class="link"
+              >Om os</a
+            >
+            <a
+              href="Nyheder"
+              class="link"
+              >Til virksomheder</a
+            >
+            <a
+              href="Nyheder"
+              class="link"
+              >Servicevilkår</a
+            >
+            <a
+              href="sitemap.html"
+              class="link"
+              >Sitemap</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center">
+        <div
+          class="img-toggle h-16 w-28 hmd:h-24 hmd:w-44"
+        ></div>
+      </div>
+    </footer>
+
+    
+
+    
+    
+  </body>
+</html>
