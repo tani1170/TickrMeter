@@ -1,1 +1,0 @@
-import"./main-a67fbc39.js";document.getElementById("togglenav").addEventListener("click",function(){document.getElementById("nav").classList.toggle("-right-full"),document.getElementById("nav").classList.toggle("right-0")});
