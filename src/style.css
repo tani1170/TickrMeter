@@ -90,7 +90,7 @@
     fill: #dce2e4;
   }
   .dropdown-content {
-    background-color: #2b2e27;
+    background-color: #2b2e37;
     border-color: #dce2e4;
   }
 
@@ -100,7 +100,7 @@
 
   @media (max-width: 1024px) {
     .navbg {
-      background-color: #2b2e27;
+      background-color: #2b2e37;
     }
   }
 
@@ -179,10 +179,10 @@
 
   .logininput {
     background-color: #dce2e4;
-    color: #2b2e27;
+    color: #2b2e37;
   }
   body {
-    background-color: #2b2e27;
+    background-color: #2b2e37;
   }
 
   .packbtn {
@@ -194,7 +194,7 @@
 
   .packbtn:focus {
     background-color: #dce2e4;
-    color: #2b2e27;
+    color: #2b2e37;
     border-width: 2px;
     height: 3rem;
   }
@@ -226,7 +226,7 @@
   label,
   a,
   .previousstep {
-    color: #2b2e27;
+    color: #2b2e37;
   }
 
   .navfonttheme {
@@ -251,8 +251,8 @@
     font-family: var(
       --font-family-raleway
     );
-    color: #2b2e27;
-    border-color: #2b2e27;
+    color: #2b2e37;
+    border-color: #2b2e37;
   }
 
   /* --------------- NAVIGATION---------------  */
@@ -301,7 +301,7 @@
   }
   .dropdown-content {
     background-color: #ece8e4;
-    border-color: #2b2e27;
+    border-color: #2b2e37;
   }
 
   .dropdown .dropbtn {
@@ -350,7 +350,7 @@
   /* --------------- BANNER---------------  */
 
   .banner {
-    background-color: #2b2e27;
+    background-color: #2b2e37;
   }
 
   .bannerlogo1 {
@@ -379,7 +379,7 @@
   }
   /* --------------- BACKGROUND---------------  */
   .themebg {
-    background-color: #2b2e27;
+    background-color: #2b2e37;
   }
 
   .themebtn {
@@ -394,7 +394,7 @@
 
   .logininput {
     background-color: #ece8e4;
-    color: #2b2e27;
+    color: #2b2e37;
   }
   body {
     background-color: #ece8e4;
@@ -409,7 +409,7 @@
 
   .packbtn:focus {
     background-color: #ece8e4;
-    color: #2b2e27;
+    color: #2b2e37;
     border-width: 2px;
     height: 3rem;
   }
@@ -534,7 +534,7 @@ body {
       --light,
       #ece8e4
     )
-    var(--dark, #2b2e27);
+    var(--dark, #2b2e37);
 }
 
 /* ----------------------------------------------- TYPOGRAFI ----------------------------------- */
@@ -544,7 +544,7 @@ h1 {
   font-family: var(
     --font-family-futura
   );
-  color: var(--light, #2b2e27)
+  color: var(--light, #2b2e37)
     var(--dark, #dce2e4);
   padding-top: 10px;
   padding-bottom: 10px;
@@ -557,7 +557,7 @@ h2 {
   font-family: var(
     --font-family-futura
   );
-  color: var(--light, #2b2e27)
+  color: var(--light, #2b2e37)
     var(--dark, #dce2e4);
   padding-top: 10px;
   padding-bottom: 10px;
@@ -575,7 +575,7 @@ h3 {
   font-family: var(
     --font-family-raleway
   );
-  color: var(--light, #2b2e27)
+  color: var(--light, #2b2e37)
     var(--dark, #dce2e4);
 }
 
@@ -585,7 +585,7 @@ h4 {
   font-family: var(
     --font-family-raleway
   );
-  color: var(--light, #2b2e27)
+  color: var(--light, #2b2e37)
     var(--dark, #dce2e4);
 }
 
@@ -595,9 +595,9 @@ h4 {
   font-family: var(
     --font-family-raleway
   );
-  color: var(--light, #2b2e27)
+  color: var(--light, #2b2e37)
     var(--dark, #dce2e4);
-  border-color: var(--light, #2b2e27)
+  border-color: var(--light, #2b2e37)
     var(--dark, #dce2e4);
 }
 
@@ -607,7 +607,7 @@ p {
   font-family: var(
     --font-family-raleway
   );
-  color: var(--light, #2b2e27)
+  color: var(--light, #2b2e37)
     var(--dark, #dce2e4);
   line-height: 130%;
 }
@@ -618,12 +618,12 @@ p {
   font-family: var(
     --font-family-raleway
   );
-  color: var(--light, #2b2e27)
+  color: var(--light, #2b2e37)
     var(--dark, #dce2e4);
 }
 
 .previousstep {
-  color: var(--light, #2b2e27)
+  color: var(--light, #2b2e37)
     var(--dark, #dce2e4);
 }
 .navfont {
@@ -632,7 +632,7 @@ p {
   font-family: var(
     --font-family-futura
   );
-  color: var(--light, #2b2e27)
+  color: var(--light, #2b2e37)
     var(--dark, #dce2e4);
 }
 
@@ -651,7 +651,7 @@ p {
     --font-family-raleway
   );
   text-decoration: underline;
-  color: var(--light, #2b2e27)
+  color: var(--light, #2b2e37)
     var(--dark, #dce2e4);
 }
 
@@ -660,7 +660,7 @@ p {
 }
 
 label {
-  color: var(--light, #2b2e27)
+  color: var(--light, #2b2e37)
     var(--dark, #dce2e4);
 }
 
@@ -670,7 +670,7 @@ a {
   font-family: var(
     --font-family-raleway
   );
-  color: var(--light, #2b2e27)
+  color: var(--light, #2b2e37)
     var(--dark, #dce2e4);
 }
 /* --------------------------------------------- IMG/ICONS -------------------------------------- */
@@ -777,12 +777,12 @@ a {
 }
 
 .burgersvg {
-  fill: var(--light, #2b2e27)
+  fill: var(--light, #2b2e37)
     var(--dark, #dce2e4);
 }
 
 .navdrop {
-  fill: var(--light, #2b2e27)
+  fill: var(--light, #2b2e37)
     var(--dark, #dce2e4);
 }
 
@@ -858,7 +858,7 @@ a {
   display: inline-block;
   background-image: var(
       --light,
-      linear-gradient(#2b2e27, #2b2e27)
+      linear-gradient(#2b2e37, #2b2e37)
     )
     var(
       --dark,
@@ -873,7 +873,7 @@ a {
 .btn-pri:hover {
   background-size: 100% 100%;
   color: var(--light, #ece8e4)
-    var(--dark, #2b2e27);
+    var(--dark, #2b2e37);
 }
 
 .themesubbtn {
@@ -895,7 +895,7 @@ a {
 }
 .themesubbtn:hover {
   background-size: 100% 100%;
-  color: var(--light, #2b2e27);
+  color: var(--light, #2b2e37);
 }
 
 /* --------------- STEPGUIDE---------------  */
@@ -944,7 +944,7 @@ a {
   font-size: 16px;
   border: none;
   outline: none;
-  color: var(--light, #2b2e27)
+  color: var(--light, #2b2e37)
     var(--dark, #dce2e4);
   padding: 14px 16px;
   background-color: inherit;
@@ -959,7 +959,7 @@ a {
       --light,
       #ece8e4
     )
-    var(--dark, #2b2e27);
+    var(--dark, #2b2e37);
   border-color: var(--light, #2b2e27)
     var(--dark, #dce2e4);
   min-width: 160px;
@@ -984,7 +984,7 @@ a {
 .banner {
   background-color: var(
       --light,
-      #2b2e27
+      #2b2e37
     )
     var(--dark, #414559);
 }
@@ -1050,7 +1050,7 @@ a {
 .themebg {
   background-color: var(
       --light,
-      #2b2e27
+      #2b2e37
     )
     var(--dark, #414559);
 }
@@ -1068,9 +1068,9 @@ a {
       #ece8e4
     )
     var(--dark, #414559);
-  border-color: var(--light, #2b2e27)
+  border-color: var(--light, #2b2e37)
     var(--dark, #dce2e4);
-  color: var(--light, #2b2e27)
+  color: var(--light, #2b2e37)
     var(--dark, #dce2e4);
 }
 
@@ -1080,14 +1080,14 @@ a {
       #ece8e4
     )
     var(--dark, #dce2e4);
-  color: #2b2e27;
+  color: #2b2e37;
 }
 
 .packbtn {
-  border-color: var(--light, #2b2e27)
+  border-color: var(--light, #2b2e37)
     var(--dark, #dce2e4);
   height: 3rem;
-  color: var(--light, #2b2e27)
+  color: var(--light, #2b2e37)
     var(--dark, #dce2e4);
   border-width: 2px;
   height: 3rem;
@@ -1096,11 +1096,11 @@ a {
 .packbtn:focus {
   background-color: var(
       --light,
-      #2b2e27
+      #2b2e37
     )
     var(--dark, #dce2e4);
   color: var(--light, #ece8e4)
-    var(--dark, #2b2e27);
+    var(--dark, #2b2e37);
   border-width: 2px;
   height: 3rem;
 }
@@ -1237,7 +1237,7 @@ a {
   }
 
   .navbgtheme {
-    background-color: #2b2e27;
+    background-color: #2b2e37;
   }
 }
 
